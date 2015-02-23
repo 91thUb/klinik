@@ -1,0 +1,1643 @@
+2013/12/24 14:15:58 [error] [exception.CException] exception 'CException' with message 'The "dataProvider" property cannot be empty.' in C:\xampp\yii-bin\framework\zii\widgets\CBaseListView.php:106
+Stack trace:
+#0 C:\xampp\yii-bin\framework\zii\widgets\grid\CGridView.php(289): CBaseListView->init()
+#1 C:\xampp\yii-bin\framework\web\CBaseController.php(148): CGridView->init()
+#2 C:\xampp\yii-bin\framework\web\CBaseController.php(173): CBaseController->createWidget('zii.widgets.gri...', Array)
+#3 C:\xampp\htdocs\klinik\protected\views\dokter\admin.php(58): CBaseController->widget('zii.widgets.gri...', Array)
+#4 C:\xampp\yii-bin\framework\web\CBaseController.php(127): require('C:\xampp\htdocs...')
+#5 C:\xampp\yii-bin\framework\web\CBaseController.php(96): CBaseController->renderInternal('C:\xampp\htdocs...', Array, true)
+#6 C:\xampp\yii-bin\framework\web\CController.php(870): CBaseController->renderFile('C:\xampp\htdocs...', Array, true)
+#7 C:\xampp\yii-bin\framework\web\CController.php(783): CController->renderPartial('admin', Array, true)
+#8 C:\xampp\htdocs\klinik\protected\controllers\DokterController.php(140): CController->render('admin', Array)
+#9 C:\xampp\yii-bin\framework\web\actions\CInlineAction.php(50): DokterController->actionAdmin()
+#10 C:\xampp\yii-bin\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#11 C:\xampp\yii-bin\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#12 C:\xampp\yii-bin\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#13 C:\xampp\yii-bin\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#14 C:\xampp\yii-bin\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#15 C:\xampp\yii-bin\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#16 C:\xampp\yii-bin\framework\web\CController.php(292): CFilterChain->run()
+#17 C:\xampp\yii-bin\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#18 C:\xampp\yii-bin\framework\web\CWebApplication.php(283): CController->run('admin')
+#19 C:\xampp\yii-bin\framework\web\CWebApplication.php(142): CWebApplication->runController('dokter/admin')
+#20 C:\xampp\yii-bin\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#21 C:\xampp\htdocs\klinik\index.php(13): CApplication->run()
+#22 {main}
+REQUEST_URI=/klinik/dokter/admin
+HTTP_REFERER=http://localhost/klinik/dokter/1
+---
+2013/12/24 14:19:15 [error] [php] include(requied.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory (C:\xampp\yii-bin\framework\YiiBase.php:423)
+Stack trace:
+#0 C:\xampp\yii-bin\framework\validators\CValidator.php(187): import()
+#1 C:\xampp\yii-bin\framework\base\CModel.php(285): createValidator()
+#2 C:\xampp\yii-bin\framework\base\CModel.php(259): Pasien->createValidators()
+#3 C:\xampp\yii-bin\framework\web\helpers\CHtml.php(1871): Pasien->getValidators()
+#4 C:\xampp\yii-bin\framework\web\helpers\CHtml.php(1217): activeInputField()
+#5 C:\xampp\yii-bin\framework\web\widgets\CActiveForm.php(658): activeTextField()
+#6 C:\xampp\htdocs\klinik\protected\views\pasien\_search.php(16): CActiveForm->textField()
+#7 C:\xampp\yii-bin\framework\web\CBaseController.php(127): require()
+#8 C:\xampp\yii-bin\framework\web\CBaseController.php(96): PasienController->renderInternal()
+#9 C:\xampp\yii-bin\framework\web\CController.php(870): PasienController->renderFile()
+#10 C:\xampp\htdocs\klinik\protected\views\pasien\admin.php(40): PasienController->renderPartial()
+#11 C:\xampp\yii-bin\framework\web\CBaseController.php(127): require()
+#12 C:\xampp\yii-bin\framework\web\CBaseController.php(96): PasienController->renderInternal()
+#13 C:\xampp\yii-bin\framework\web\CController.php(870): PasienController->renderFile()
+#14 C:\xampp\yii-bin\framework\web\CController.php(783): PasienController->renderPartial()
+#15 C:\xampp\htdocs\klinik\protected\controllers\PasienController.php(140): PasienController->render()
+#16 C:\xampp\yii-bin\framework\web\actions\CInlineAction.php(50): PasienController->actionAdmin()
+#17 C:\xampp\yii-bin\framework\web\CController.php(309): CInlineAction->runWithParams()
+#18 C:\xampp\yii-bin\framework\web\filters\CFilterChain.php(134): PasienController->runAction()
+#19 C:\xampp\yii-bin\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#20 C:\xampp\yii-bin\framework\web\CController.php(1146): CAccessControlFilter->filter()
+#21 C:\xampp\yii-bin\framework\web\filters\CInlineFilter.php(59): PasienController->filterAccessControl()
+#22 C:\xampp\yii-bin\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter()
+#23 C:\xampp\yii-bin\framework\web\CController.php(292): CFilterChain->run()
+#24 C:\xampp\yii-bin\framework\web\CController.php(266): PasienController->runActionWithFilters()
+#25 C:\xampp\yii-bin\framework\web\CWebApplication.php(283): PasienController->run()
+#26 C:\xampp\yii-bin\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#27 C:\xampp\yii-bin\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#28 C:\xampp\htdocs\klinik\index.php(13): CWebApplication->run()
+REQUEST_URI=/klinik/pasien/admin
+in C:\xampp\htdocs\klinik\protected\views\pasien\_search.php (16)
+in C:\xampp\htdocs\klinik\protected\views\pasien\admin.php (40)
+in C:\xampp\htdocs\klinik\protected\controllers\PasienController.php (140)
+2013/12/24 14:19:37 [error] [php] include(requied.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory (C:\xampp\yii-bin\framework\YiiBase.php:423)
+Stack trace:
+#0 C:\xampp\yii-bin\framework\validators\CValidator.php(187): import()
+#1 C:\xampp\yii-bin\framework\base\CModel.php(285): createValidator()
+#2 C:\xampp\yii-bin\framework\base\CModel.php(259): Pasien->createValidators()
+#3 C:\xampp\yii-bin\framework\web\helpers\CHtml.php(1871): Pasien->getValidators()
+#4 C:\xampp\yii-bin\framework\web\helpers\CHtml.php(1217): activeInputField()
+#5 C:\xampp\yii-bin\framework\web\widgets\CActiveForm.php(658): activeTextField()
+#6 C:\xampp\htdocs\klinik\protected\views\pasien\_search.php(16): CActiveForm->textField()
+#7 C:\xampp\yii-bin\framework\web\CBaseController.php(127): require()
+#8 C:\xampp\yii-bin\framework\web\CBaseController.php(96): PasienController->renderInternal()
+#9 C:\xampp\yii-bin\framework\web\CController.php(870): PasienController->renderFile()
+#10 C:\xampp\htdocs\klinik\protected\views\pasien\admin.php(40): PasienController->renderPartial()
+#11 C:\xampp\yii-bin\framework\web\CBaseController.php(127): require()
+#12 C:\xampp\yii-bin\framework\web\CBaseController.php(96): PasienController->renderInternal()
+#13 C:\xampp\yii-bin\framework\web\CController.php(870): PasienController->renderFile()
+#14 C:\xampp\yii-bin\framework\web\CController.php(783): PasienController->renderPartial()
+#15 C:\xampp\htdocs\klinik\protected\controllers\PasienController.php(140): PasienController->render()
+#16 C:\xampp\yii-bin\framework\web\actions\CInlineAction.php(50): PasienController->actionAdmin()
+#17 C:\xampp\yii-bin\framework\web\CController.php(309): CInlineAction->runWithParams()
+#18 C:\xampp\yii-bin\framework\web\filters\CFilterChain.php(134): PasienController->runAction()
+#19 C:\xampp\yii-bin\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#20 C:\xampp\yii-bin\framework\web\CController.php(1146): CAccessControlFilter->filter()
+#21 C:\xampp\yii-bin\framework\web\filters\CInlineFilter.php(59): PasienController->filterAccessControl()
+#22 C:\xampp\yii-bin\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter()
+#23 C:\xampp\yii-bin\framework\web\CController.php(292): CFilterChain->run()
+#24 C:\xampp\yii-bin\framework\web\CController.php(266): PasienController->runActionWithFilters()
+#25 C:\xampp\yii-bin\framework\web\CWebApplication.php(283): PasienController->run()
+#26 C:\xampp\yii-bin\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#27 C:\xampp\yii-bin\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#28 C:\xampp\htdocs\klinik\index.php(13): CWebApplication->run()
+REQUEST_URI=/klinik/pasien/admin
+in C:\xampp\htdocs\klinik\protected\views\pasien\_search.php (16)
+in C:\xampp\htdocs\klinik\protected\views\pasien\admin.php (40)
+in C:\xampp\htdocs\klinik\protected\controllers\PasienController.php (140)
+2013/12/24 14:22:11 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "obat".' in C:\xampp\yii-bin\framework\web\CController.php:484
+Stack trace:
+#0 C:\xampp\yii-bin\framework\web\CController.php(271): CController->missingAction('obat')
+#1 C:\xampp\yii-bin\framework\web\CWebApplication.php(283): CController->run('obat')
+#2 C:\xampp\yii-bin\framework\web\CWebApplication.php(142): CWebApplication->runController('pasien/obat')
+#3 C:\xampp\yii-bin\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\klinik\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/klinik/pasien/obat
+---
+2013/12/24 14:31:20 [error] [exception.CException] exception 'CException' with message 'CActiveForm and its behaviors do not have a method or closure named "dropDownListRow".' in C:\xampp\yii-bin\framework\base\CComponent.php:266
+Stack trace:
+#0 C:\xampp\htdocs\klinik\protected\views\obat\_form.php(37): CComponent->__call('dropDownListRow', Array)
+#1 C:\xampp\htdocs\klinik\protected\views\obat\_form.php(37): CActiveForm->dropDownListRow(Object(Obat), 'id_suplier', Array, Array)
+#2 C:\xampp\yii-bin\framework\web\CBaseController.php(127): require('C:\xampp\htdocs...')
+#3 C:\xampp\yii-bin\framework\web\CBaseController.php(96): CBaseController->renderInternal('C:\xampp\htdocs...', Array, true)
+#4 C:\xampp\yii-bin\framework\web\CController.php(870): CBaseController->renderFile('C:\xampp\htdocs...', Array, true)
+#5 C:\xampp\htdocs\klinik\protected\views\obat\create.php(18): CController->renderPartial('_form', Array)
+#6 C:\xampp\yii-bin\framework\web\CBaseController.php(127): require('C:\xampp\htdocs...')
+#7 C:\xampp\yii-bin\framework\web\CBaseController.php(96): CBaseController->renderInternal('C:\xampp\htdocs...', Array, true)
+#8 C:\xampp\yii-bin\framework\web\CController.php(870): CBaseController->renderFile('C:\xampp\htdocs...', Array, true)
+#9 C:\xampp\yii-bin\framework\web\CController.php(783): CController->renderPartial('create', Array, true)
+#10 C:\xampp\htdocs\klinik\protected\controllers\ObatController.php(79): CController->render('create', Array)
+#11 C:\xampp\yii-bin\framework\web\actions\CInlineAction.php(50): ObatController->actionCreate()
+#12 C:\xampp\yii-bin\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#13 C:\xampp\yii-bin\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#14 C:\xampp\yii-bin\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#15 C:\xampp\yii-bin\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#16 C:\xampp\yii-bin\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#17 C:\xampp\yii-bin\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#18 C:\xampp\yii-bin\framework\web\CController.php(292): CFilterChain->run()
+#19 C:\xampp\yii-bin\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#20 C:\xampp\yii-bin\framework\web\CWebApplication.php(283): CController->run('create')
+#21 C:\xampp\yii-bin\framework\web\CWebApplication.php(142): CWebApplication->runController('obat/create')
+#22 C:\xampp\yii-bin\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#23 C:\xampp\htdocs\klinik\index.php(13): CApplication->run()
+#24 {main}
+REQUEST_URI=/klinik/obat/create
+HTTP_REFERER=http://localhost/klinik/obat/create
+---
+2013/12/24 14:31:38 [error] [exception.CException] exception 'CException' with message 'CActiveForm and its behaviors do not have a method or closure named "dropDownListRow".' in C:\xampp\yii-bin\framework\base\CComponent.php:266
+Stack trace:
+#0 C:\xampp\htdocs\klinik\protected\views\obat\_form.php(34): CComponent->__call('dropDownListRow', Array)
+#1 C:\xampp\htdocs\klinik\protected\views\obat\_form.php(34): CActiveForm->dropDownListRow(Object(Obat), 'id_suplier', Array)
+#2 C:\xampp\yii-bin\framework\web\CBaseController.php(127): require('C:\xampp\htdocs...')
+#3 C:\xampp\yii-bin\framework\web\CBaseController.php(96): CBaseController->renderInternal('C:\xampp\htdocs...', Array, true)
+#4 C:\xampp\yii-bin\framework\web\CController.php(870): CBaseController->renderFile('C:\xampp\htdocs...', Array, true)
+#5 C:\xampp\htdocs\klinik\protected\views\obat\create.php(18): CController->renderPartial('_form', Array)
+#6 C:\xampp\yii-bin\framework\web\CBaseController.php(127): require('C:\xampp\htdocs...')
+#7 C:\xampp\yii-bin\framework\web\CBaseController.php(96): CBaseController->renderInternal('C:\xampp\htdocs...', Array, true)
+#8 C:\xampp\yii-bin\framework\web\CController.php(870): CBaseController->renderFile('C:\xampp\htdocs...', Array, true)
+#9 C:\xampp\yii-bin\framework\web\CController.php(783): CController->renderPartial('create', Array, true)
+#10 C:\xampp\htdocs\klinik\protected\controllers\ObatController.php(79): CController->render('create', Array)
+#11 C:\xampp\yii-bin\framework\web\actions\CInlineAction.php(50): ObatController->actionCreate()
+#12 C:\xampp\yii-bin\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#13 C:\xampp\yii-bin\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#14 C:\xampp\yii-bin\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#15 C:\xampp\yii-bin\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#16 C:\xampp\yii-bin\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#17 C:\xampp\yii-bin\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#18 C:\xampp\yii-bin\framework\web\CController.php(292): CFilterChain->run()
+#19 C:\xampp\yii-bin\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#20 C:\xampp\yii-bin\framework\web\CWebApplication.php(283): CController->run('create')
+#21 C:\xampp\yii-bin\framework\web\CWebApplication.php(142): CWebApplication->runController('obat/create')
+#22 C:\xampp\yii-bin\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#23 C:\xampp\htdocs\klinik\index.php(13): CApplication->run()
+#24 {main}
+REQUEST_URI=/klinik/obat/create
+HTTP_REFERER=http://localhost/klinik/obat/create
+---
+2013/12/24 14:33:20 [error] [exception.CException] exception 'CException' with message 'Property "Suplier.nama" is not defined.' in C:\xampp\yii-bin\framework\base\CComponent.php:131
+Stack trace:
+#0 C:\xampp\yii-bin\framework\db\ar\CActiveRecord.php(144): CComponent->__get('nama')
+#1 C:\xampp\yii-bin\framework\web\helpers\CHtml.php(1809): CActiveRecord->__get('nama')
+#2 C:\xampp\yii-bin\framework\web\helpers\CHtml.php(1773): CHtml::value(Object(Suplier), 'nama')
+#3 C:\xampp\htdocs\klinik\protected\views\obat\_form.php(34): CHtml::listData(Array, 'id', 'nama')
+#4 C:\xampp\yii-bin\framework\web\CBaseController.php(127): require('C:\xampp\htdocs...')
+#5 C:\xampp\yii-bin\framework\web\CBaseController.php(96): CBaseController->renderInternal('C:\xampp\htdocs...', Array, true)
+#6 C:\xampp\yii-bin\framework\web\CController.php(870): CBaseController->renderFile('C:\xampp\htdocs...', Array, true)
+#7 C:\xampp\htdocs\klinik\protected\views\obat\create.php(18): CController->renderPartial('_form', Array)
+#8 C:\xampp\yii-bin\framework\web\CBaseController.php(127): require('C:\xampp\htdocs...')
+#9 C:\xampp\yii-bin\framework\web\CBaseController.php(96): CBaseController->renderInternal('C:\xampp\htdocs...', Array, true)
+#10 C:\xampp\yii-bin\framework\web\CController.php(870): CBaseController->renderFile('C:\xampp\htdocs...', Array, true)
+#11 C:\xampp\yii-bin\framework\web\CController.php(783): CController->renderPartial('create', Array, true)
+#12 C:\xampp\htdocs\klinik\protected\controllers\ObatController.php(79): CController->render('create', Array)
+#13 C:\xampp\yii-bin\framework\web\actions\CInlineAction.php(50): ObatController->actionCreate()
+#14 C:\xampp\yii-bin\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#15 C:\xampp\yii-bin\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#16 C:\xampp\yii-bin\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#17 C:\xampp\yii-bin\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#18 C:\xampp\yii-bin\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#19 C:\xampp\yii-bin\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#20 C:\xampp\yii-bin\framework\web\CController.php(292): CFilterChain->run()
+#21 C:\xampp\yii-bin\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#22 C:\xampp\yii-bin\framework\web\CWebApplication.php(283): CController->run('create')
+#23 C:\xampp\yii-bin\framework\web\CWebApplication.php(142): CWebApplication->runController('obat/create')
+#24 C:\xampp\yii-bin\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#25 C:\xampp\htdocs\klinik\index.php(13): CApplication->run()
+#26 {main}
+REQUEST_URI=/klinik/obat/create
+HTTP_REFERER=http://localhost/klinik/obat/create
+---
+2013/12/24 14:33:54 [error] [exception.CException] exception 'CException' with message 'Property "Suplier.nama_suplier" is not defined.' in C:\xampp\yii-bin\framework\base\CComponent.php:131
+Stack trace:
+#0 C:\xampp\yii-bin\framework\db\ar\CActiveRecord.php(144): CComponent->__get('nama_suplier')
+#1 C:\xampp\yii-bin\framework\web\helpers\CHtml.php(1809): CActiveRecord->__get('nama_suplier')
+#2 C:\xampp\yii-bin\framework\web\helpers\CHtml.php(1773): CHtml::value(Object(Suplier), 'nama_suplier')
+#3 C:\xampp\htdocs\klinik\protected\views\obat\_form.php(34): CHtml::listData(Array, 'id', 'nama_suplier')
+#4 C:\xampp\yii-bin\framework\web\CBaseController.php(127): require('C:\xampp\htdocs...')
+#5 C:\xampp\yii-bin\framework\web\CBaseController.php(96): CBaseController->renderInternal('C:\xampp\htdocs...', Array, true)
+#6 C:\xampp\yii-bin\framework\web\CController.php(870): CBaseController->renderFile('C:\xampp\htdocs...', Array, true)
+#7 C:\xampp\htdocs\klinik\protected\views\obat\create.php(18): CController->renderPartial('_form', Array)
+#8 C:\xampp\yii-bin\framework\web\CBaseController.php(127): require('C:\xampp\htdocs...')
+#9 C:\xampp\yii-bin\framework\web\CBaseController.php(96): CBaseController->renderInternal('C:\xampp\htdocs...', Array, true)
+#10 C:\xampp\yii-bin\framework\web\CController.php(870): CBaseController->renderFile('C:\xampp\htdocs...', Array, true)
+#11 C:\xampp\yii-bin\framework\web\CController.php(783): CController->renderPartial('create', Array, true)
+#12 C:\xampp\htdocs\klinik\protected\controllers\ObatController.php(79): CController->render('create', Array)
+#13 C:\xampp\yii-bin\framework\web\actions\CInlineAction.php(50): ObatController->actionCreate()
+#14 C:\xampp\yii-bin\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#15 C:\xampp\yii-bin\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#16 C:\xampp\yii-bin\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#17 C:\xampp\yii-bin\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#18 C:\xampp\yii-bin\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#19 C:\xampp\yii-bin\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#20 C:\xampp\yii-bin\framework\web\CController.php(292): CFilterChain->run()
+#21 C:\xampp\yii-bin\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#22 C:\xampp\yii-bin\framework\web\CWebApplication.php(283): CController->run('create')
+#23 C:\xampp\yii-bin\framework\web\CWebApplication.php(142): CWebApplication->runController('obat/create')
+#24 C:\xampp\yii-bin\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#25 C:\xampp\htdocs\klinik\index.php(13): CApplication->run()
+#26 {main}
+REQUEST_URI=/klinik/obat/create
+HTTP_REFERER=http://localhost/klinik/obat/create
+---
+2013/12/24 14:34:33 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`klinik`.`obat`, CONSTRAINT `obat_ibfk_1` FOREIGN KEY (`id_suplier`) REFERENCES `type_operator` (`id`) ON DELETE CASCADE ON UPDATE CASCADE). The SQL statement executed was: INSERT INTO `obat` (`nama`, `deskripsi`, `id_suplier`) VALUES (:yp0, :yp1, :yp2).
+in C:\xampp\htdocs\klinik\protected\controllers\ObatController.php (73)
+in C:\xampp\htdocs\klinik\index.php (13)
+2013/12/24 14:34:33 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`klinik`.`obat`, CONSTRAINT `obat_ibfk_1` FOREIGN KEY (`id_suplier`) REFERENCES `type_operator` (`id`) ON DELETE CASCADE ON UPDATE CASCADE). The SQL statement executed was: INSERT INTO `obat` (`nama`, `deskripsi`, `id_suplier`) VALUES (:yp0, :yp1, :yp2)' in C:\xampp\yii-bin\framework\db\CDbCommand.php:354
+Stack trace:
+#0 C:\xampp\yii-bin\framework\db\ar\CActiveRecord.php(1017): CDbCommand->execute()
+#1 C:\xampp\yii-bin\framework\db\ar\CActiveRecord.php(796): CActiveRecord->insert(NULL)
+#2 C:\xampp\htdocs\klinik\protected\controllers\ObatController.php(73): CActiveRecord->save()
+#3 C:\xampp\yii-bin\framework\web\actions\CInlineAction.php(50): ObatController->actionCreate()
+#4 C:\xampp\yii-bin\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#5 C:\xampp\yii-bin\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#6 C:\xampp\yii-bin\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#7 C:\xampp\yii-bin\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#8 C:\xampp\yii-bin\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#9 C:\xampp\yii-bin\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#10 C:\xampp\yii-bin\framework\web\CController.php(292): CFilterChain->run()
+#11 C:\xampp\yii-bin\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 C:\xampp\yii-bin\framework\web\CWebApplication.php(283): CController->run('create')
+#13 C:\xampp\yii-bin\framework\web\CWebApplication.php(142): CWebApplication->runController('obat/create')
+#14 C:\xampp\yii-bin\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#15 C:\xampp\htdocs\klinik\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/klinik/obat/create
+HTTP_REFERER=http://localhost/klinik/obat/create
+---
+2013/12/24 14:34:58 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`klinik`.`obat`, CONSTRAINT `obat_ibfk_1` FOREIGN KEY (`id_suplier`) REFERENCES `type_operator` (`id`) ON DELETE CASCADE ON UPDATE CASCADE). The SQL statement executed was: INSERT INTO `obat` (`nama`, `deskripsi`, `id_suplier`) VALUES (:yp0, :yp1, :yp2).
+in C:\xampp\htdocs\klinik\protected\controllers\ObatController.php (73)
+in C:\xampp\htdocs\klinik\index.php (13)
+2013/12/24 14:34:58 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`klinik`.`obat`, CONSTRAINT `obat_ibfk_1` FOREIGN KEY (`id_suplier`) REFERENCES `type_operator` (`id`) ON DELETE CASCADE ON UPDATE CASCADE). The SQL statement executed was: INSERT INTO `obat` (`nama`, `deskripsi`, `id_suplier`) VALUES (:yp0, :yp1, :yp2)' in C:\xampp\yii-bin\framework\db\CDbCommand.php:354
+Stack trace:
+#0 C:\xampp\yii-bin\framework\db\ar\CActiveRecord.php(1017): CDbCommand->execute()
+#1 C:\xampp\yii-bin\framework\db\ar\CActiveRecord.php(796): CActiveRecord->insert(NULL)
+#2 C:\xampp\htdocs\klinik\protected\controllers\ObatController.php(73): CActiveRecord->save()
+#3 C:\xampp\yii-bin\framework\web\actions\CInlineAction.php(50): ObatController->actionCreate()
+#4 C:\xampp\yii-bin\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#5 C:\xampp\yii-bin\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#6 C:\xampp\yii-bin\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#7 C:\xampp\yii-bin\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#8 C:\xampp\yii-bin\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#9 C:\xampp\yii-bin\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#10 C:\xampp\yii-bin\framework\web\CController.php(292): CFilterChain->run()
+#11 C:\xampp\yii-bin\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 C:\xampp\yii-bin\framework\web\CWebApplication.php(283): CController->run('create')
+#13 C:\xampp\yii-bin\framework\web\CWebApplication.php(142): CWebApplication->runController('obat/create')
+#14 C:\xampp\yii-bin\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#15 C:\xampp\htdocs\klinik\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/klinik/obat/create
+HTTP_REFERER=http://localhost/klinik/obat/create
+---
+2013/12/24 14:38:34 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "supplier".' in C:\xampp\yii-bin\framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\xampp\yii-bin\framework\web\CWebApplication.php(142): CWebApplication->runController('supplier')
+#1 C:\xampp\yii-bin\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\klinik\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/klinik/supplier
+---
+2013/12/24 14:39:57 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "obat".' in C:\xampp\yii-bin\framework\web\CController.php:484
+Stack trace:
+#0 C:\xampp\yii-bin\framework\web\CController.php(271): CController->missingAction('obat')
+#1 C:\xampp\yii-bin\framework\web\CWebApplication.php(283): CController->run('obat')
+#2 C:\xampp\yii-bin\framework\web\CWebApplication.php(142): CWebApplication->runController('suplier/obat')
+#3 C:\xampp\yii-bin\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\klinik\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/klinik/suplier/obat
+---
+2013/12/24 14:40:08 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "obat".' in C:\xampp\yii-bin\framework\web\CController.php:484
+Stack trace:
+#0 C:\xampp\yii-bin\framework\web\CController.php(271): CController->missingAction('obat')
+#1 C:\xampp\yii-bin\framework\web\CWebApplication.php(283): CController->run('obat')
+#2 C:\xampp\yii-bin\framework\web\CWebApplication.php(142): CWebApplication->runController('suplier/obat')
+#3 C:\xampp\yii-bin\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\klinik\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/klinik/suplier/obat
+---
+2013/12/24 15:07:25 [error] [php] include(number.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory (C:\xampp\yii-bin\framework\YiiBase.php:423)
+Stack trace:
+#0 C:\xampp\yii-bin\framework\validators\CValidator.php(187): import()
+#1 C:\xampp\yii-bin\framework\base\CModel.php(285): createValidator()
+#2 C:\xampp\yii-bin\framework\base\CModel.php(259): RiwayatBerobat->createValidators()
+#3 C:\xampp\yii-bin\framework\base\CModel.php(544): RiwayatBerobat->getValidators()
+#4 C:\xampp\yii-bin\framework\base\CModel.php(466): RiwayatBerobat->getSafeAttributeNames()
+#5 C:\xampp\yii-bin\framework\base\CComponent.php(153): RiwayatBerobat->setAttributes()
+#6 C:\xampp\yii-bin\framework\db\ar\CActiveRecord.php(160): RiwayatBerobat->__set()
+#7 C:\xampp\htdocs\klinik\protected\controllers\RiwayatBerobatController.php(72): RiwayatBerobat->__set()
+#8 C:\xampp\yii-bin\framework\web\actions\CInlineAction.php(50): RiwayatBerobatController->actionCreate()
+#9 C:\xampp\yii-bin\framework\web\CController.php(309): CInlineAction->runWithParams()
+#10 C:\xampp\yii-bin\framework\web\filters\CFilterChain.php(134): RiwayatBerobatController->runAction()
+#11 C:\xampp\yii-bin\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#12 C:\xampp\yii-bin\framework\web\CController.php(1146): CAccessControlFilter->filter()
+#13 C:\xampp\yii-bin\framework\web\filters\CInlineFilter.php(59): RiwayatBerobatController->filterAccessControl()
+#14 C:\xampp\yii-bin\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter()
+#15 C:\xampp\yii-bin\framework\web\CController.php(292): CFilterChain->run()
+#16 C:\xampp\yii-bin\framework\web\CController.php(266): RiwayatBerobatController->runActionWithFilters()
+#17 C:\xampp\yii-bin\framework\web\CWebApplication.php(283): RiwayatBerobatController->run()
+#18 C:\xampp\yii-bin\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#19 C:\xampp\yii-bin\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#20 C:\xampp\htdocs\klinik\index.php(13): CWebApplication->run()
+REQUEST_URI=/klinik/riwayatBerobat/create
+in C:\xampp\htdocs\klinik\protected\controllers\RiwayatBerobatController.php (72)
+in C:\xampp\htdocs\klinik\index.php (13)
+2013/12/24 15:07:29 [error] [php] include(number.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory (C:\xampp\yii-bin\framework\YiiBase.php:423)
+Stack trace:
+#0 C:\xampp\yii-bin\framework\validators\CValidator.php(187): import()
+#1 C:\xampp\yii-bin\framework\base\CModel.php(285): createValidator()
+#2 C:\xampp\yii-bin\framework\base\CModel.php(259): RiwayatBerobat->createValidators()
+#3 C:\xampp\yii-bin\framework\base\CModel.php(302): RiwayatBerobat->getValidators()
+#4 C:\xampp\yii-bin\framework\web\helpers\CHtml.php(1197): RiwayatBerobat->isAttributeRequired()
+#5 C:\xampp\yii-bin\framework\web\widgets\CActiveForm.php(563): activeLabelEx()
+#6 C:\xampp\htdocs\klinik\protected\views\riwayatBerobat\_form.php(19): CActiveForm->labelEx()
+#7 C:\xampp\yii-bin\framework\web\CBaseController.php(127): require()
+#8 C:\xampp\yii-bin\framework\web\CBaseController.php(96): RiwayatBerobatController->renderInternal()
+#9 C:\xampp\yii-bin\framework\web\CController.php(870): RiwayatBerobatController->renderFile()
+#10 C:\xampp\htdocs\klinik\protected\views\riwayatBerobat\create.php(18): RiwayatBerobatController->renderPartial()
+#11 C:\xampp\yii-bin\framework\web\CBaseController.php(127): require()
+#12 C:\xampp\yii-bin\framework\web\CBaseController.php(96): RiwayatBerobatController->renderInternal()
+#13 C:\xampp\yii-bin\framework\web\CController.php(870): RiwayatBerobatController->renderFile()
+#14 C:\xampp\yii-bin\framework\web\CController.php(783): RiwayatBerobatController->renderPartial()
+#15 C:\xampp\htdocs\klinik\protected\controllers\RiwayatBerobatController.php(79): RiwayatBerobatController->render()
+#16 C:\xampp\yii-bin\framework\web\actions\CInlineAction.php(50): RiwayatBerobatController->actionCreate()
+#17 C:\xampp\yii-bin\framework\web\CController.php(309): CInlineAction->runWithParams()
+#18 C:\xampp\yii-bin\framework\web\filters\CFilterChain.php(134): RiwayatBerobatController->runAction()
+#19 C:\xampp\yii-bin\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#20 C:\xampp\yii-bin\framework\web\CController.php(1146): CAccessControlFilter->filter()
+#21 C:\xampp\yii-bin\framework\web\filters\CInlineFilter.php(59): RiwayatBerobatController->filterAccessControl()
+#22 C:\xampp\yii-bin\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter()
+#23 C:\xampp\yii-bin\framework\web\CController.php(292): CFilterChain->run()
+#24 C:\xampp\yii-bin\framework\web\CController.php(266): RiwayatBerobatController->runActionWithFilters()
+#25 C:\xampp\yii-bin\framework\web\CWebApplication.php(283): RiwayatBerobatController->run()
+#26 C:\xampp\yii-bin\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#27 C:\xampp\yii-bin\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#28 C:\xampp\htdocs\klinik\index.php(13): CWebApplication->run()
+REQUEST_URI=/klinik/riwayatBerobat/create
+in C:\xampp\htdocs\klinik\protected\views\riwayatBerobat\_form.php (19)
+in C:\xampp\htdocs\klinik\protected\views\riwayatBerobat\create.php (18)
+in C:\xampp\htdocs\klinik\protected\controllers\RiwayatBerobatController.php (79)
+2013/12/24 15:07:36 [error] [php] include(numeric.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory (C:\xampp\yii-bin\framework\YiiBase.php:423)
+Stack trace:
+#0 C:\xampp\yii-bin\framework\validators\CValidator.php(187): import()
+#1 C:\xampp\yii-bin\framework\base\CModel.php(285): createValidator()
+#2 C:\xampp\yii-bin\framework\base\CModel.php(259): RiwayatBerobat->createValidators()
+#3 C:\xampp\yii-bin\framework\base\CModel.php(302): RiwayatBerobat->getValidators()
+#4 C:\xampp\yii-bin\framework\web\helpers\CHtml.php(1197): RiwayatBerobat->isAttributeRequired()
+#5 C:\xampp\yii-bin\framework\web\widgets\CActiveForm.php(563): activeLabelEx()
+#6 C:\xampp\htdocs\klinik\protected\views\riwayatBerobat\_form.php(19): CActiveForm->labelEx()
+#7 C:\xampp\yii-bin\framework\web\CBaseController.php(127): require()
+#8 C:\xampp\yii-bin\framework\web\CBaseController.php(96): RiwayatBerobatController->renderInternal()
+#9 C:\xampp\yii-bin\framework\web\CController.php(870): RiwayatBerobatController->renderFile()
+#10 C:\xampp\htdocs\klinik\protected\views\riwayatBerobat\create.php(18): RiwayatBerobatController->renderPartial()
+#11 C:\xampp\yii-bin\framework\web\CBaseController.php(127): require()
+#12 C:\xampp\yii-bin\framework\web\CBaseController.php(96): RiwayatBerobatController->renderInternal()
+#13 C:\xampp\yii-bin\framework\web\CController.php(870): RiwayatBerobatController->renderFile()
+#14 C:\xampp\yii-bin\framework\web\CController.php(783): RiwayatBerobatController->renderPartial()
+#15 C:\xampp\htdocs\klinik\protected\controllers\RiwayatBerobatController.php(79): RiwayatBerobatController->render()
+#16 C:\xampp\yii-bin\framework\web\actions\CInlineAction.php(50): RiwayatBerobatController->actionCreate()
+#17 C:\xampp\yii-bin\framework\web\CController.php(309): CInlineAction->runWithParams()
+#18 C:\xampp\yii-bin\framework\web\filters\CFilterChain.php(134): RiwayatBerobatController->runAction()
+#19 C:\xampp\yii-bin\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#20 C:\xampp\yii-bin\framework\web\CController.php(1146): CAccessControlFilter->filter()
+#21 C:\xampp\yii-bin\framework\web\filters\CInlineFilter.php(59): RiwayatBerobatController->filterAccessControl()
+#22 C:\xampp\yii-bin\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter()
+#23 C:\xampp\yii-bin\framework\web\CController.php(292): CFilterChain->run()
+#24 C:\xampp\yii-bin\framework\web\CController.php(266): RiwayatBerobatController->runActionWithFilters()
+#25 C:\xampp\yii-bin\framework\web\CWebApplication.php(283): RiwayatBerobatController->run()
+#26 C:\xampp\yii-bin\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#27 C:\xampp\yii-bin\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#28 C:\xampp\htdocs\klinik\index.php(13): CWebApplication->run()
+REQUEST_URI=/klinik/riwayatBerobat/create
+in C:\xampp\htdocs\klinik\protected\views\riwayatBerobat\_form.php (19)
+in C:\xampp\htdocs\klinik\protected\views\riwayatBerobat\create.php (18)
+in C:\xampp\htdocs\klinik\protected\controllers\RiwayatBerobatController.php (79)
+2013/12/24 15:07:37 [error] [php] include(numeric.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory (C:\xampp\yii-bin\framework\YiiBase.php:423)
+Stack trace:
+#0 C:\xampp\yii-bin\framework\validators\CValidator.php(187): import()
+#1 C:\xampp\yii-bin\framework\base\CModel.php(285): createValidator()
+#2 C:\xampp\yii-bin\framework\base\CModel.php(259): RiwayatBerobat->createValidators()
+#3 C:\xampp\yii-bin\framework\base\CModel.php(302): RiwayatBerobat->getValidators()
+#4 C:\xampp\yii-bin\framework\web\helpers\CHtml.php(1197): RiwayatBerobat->isAttributeRequired()
+#5 C:\xampp\yii-bin\framework\web\widgets\CActiveForm.php(563): activeLabelEx()
+#6 C:\xampp\htdocs\klinik\protected\views\riwayatBerobat\_form.php(19): CActiveForm->labelEx()
+#7 C:\xampp\yii-bin\framework\web\CBaseController.php(127): require()
+#8 C:\xampp\yii-bin\framework\web\CBaseController.php(96): RiwayatBerobatController->renderInternal()
+#9 C:\xampp\yii-bin\framework\web\CController.php(870): RiwayatBerobatController->renderFile()
+#10 C:\xampp\htdocs\klinik\protected\views\riwayatBerobat\create.php(18): RiwayatBerobatController->renderPartial()
+#11 C:\xampp\yii-bin\framework\web\CBaseController.php(127): require()
+#12 C:\xampp\yii-bin\framework\web\CBaseController.php(96): RiwayatBerobatController->renderInternal()
+#13 C:\xampp\yii-bin\framework\web\CController.php(870): RiwayatBerobatController->renderFile()
+#14 C:\xampp\yii-bin\framework\web\CController.php(783): RiwayatBerobatController->renderPartial()
+#15 C:\xampp\htdocs\klinik\protected\controllers\RiwayatBerobatController.php(79): RiwayatBerobatController->render()
+#16 C:\xampp\yii-bin\framework\web\actions\CInlineAction.php(50): RiwayatBerobatController->actionCreate()
+#17 C:\xampp\yii-bin\framework\web\CController.php(309): CInlineAction->runWithParams()
+#18 C:\xampp\yii-bin\framework\web\filters\CFilterChain.php(134): RiwayatBerobatController->runAction()
+#19 C:\xampp\yii-bin\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#20 C:\xampp\yii-bin\framework\web\CController.php(1146): CAccessControlFilter->filter()
+#21 C:\xampp\yii-bin\framework\web\filters\CInlineFilter.php(59): RiwayatBerobatController->filterAccessControl()
+#22 C:\xampp\yii-bin\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter()
+#23 C:\xampp\yii-bin\framework\web\CController.php(292): CFilterChain->run()
+#24 C:\xampp\yii-bin\framework\web\CController.php(266): RiwayatBerobatController->runActionWithFilters()
+#25 C:\xampp\yii-bin\framework\web\CWebApplication.php(283): RiwayatBerobatController->run()
+#26 C:\xampp\yii-bin\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#27 C:\xampp\yii-bin\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#28 C:\xampp\htdocs\klinik\index.php(13): CWebApplication->run()
+REQUEST_URI=/klinik/riwayatBerobat/create
+in C:\xampp\htdocs\klinik\protected\views\riwayatBerobat\_form.php (19)
+in C:\xampp\htdocs\klinik\protected\views\riwayatBerobat\create.php (18)
+in C:\xampp\htdocs\klinik\protected\controllers\RiwayatBerobatController.php (79)
+2013/12/24 15:07:38 [error] [php] include(numeric.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory (C:\xampp\yii-bin\framework\YiiBase.php:423)
+Stack trace:
+#0 C:\xampp\yii-bin\framework\validators\CValidator.php(187): import()
+#1 C:\xampp\yii-bin\framework\base\CModel.php(285): createValidator()
+#2 C:\xampp\yii-bin\framework\base\CModel.php(259): RiwayatBerobat->createValidators()
+#3 C:\xampp\yii-bin\framework\base\CModel.php(302): RiwayatBerobat->getValidators()
+#4 C:\xampp\yii-bin\framework\web\helpers\CHtml.php(1197): RiwayatBerobat->isAttributeRequired()
+#5 C:\xampp\yii-bin\framework\web\widgets\CActiveForm.php(563): activeLabelEx()
+#6 C:\xampp\htdocs\klinik\protected\views\riwayatBerobat\_form.php(19): CActiveForm->labelEx()
+#7 C:\xampp\yii-bin\framework\web\CBaseController.php(127): require()
+#8 C:\xampp\yii-bin\framework\web\CBaseController.php(96): RiwayatBerobatController->renderInternal()
+#9 C:\xampp\yii-bin\framework\web\CController.php(870): RiwayatBerobatController->renderFile()
+#10 C:\xampp\htdocs\klinik\protected\views\riwayatBerobat\create.php(18): RiwayatBerobatController->renderPartial()
+#11 C:\xampp\yii-bin\framework\web\CBaseController.php(127): require()
+#12 C:\xampp\yii-bin\framework\web\CBaseController.php(96): RiwayatBerobatController->renderInternal()
+#13 C:\xampp\yii-bin\framework\web\CController.php(870): RiwayatBerobatController->renderFile()
+#14 C:\xampp\yii-bin\framework\web\CController.php(783): RiwayatBerobatController->renderPartial()
+#15 C:\xampp\htdocs\klinik\protected\controllers\RiwayatBerobatController.php(79): RiwayatBerobatController->render()
+#16 C:\xampp\yii-bin\framework\web\actions\CInlineAction.php(50): RiwayatBerobatController->actionCreate()
+#17 C:\xampp\yii-bin\framework\web\CController.php(309): CInlineAction->runWithParams()
+#18 C:\xampp\yii-bin\framework\web\filters\CFilterChain.php(134): RiwayatBerobatController->runAction()
+#19 C:\xampp\yii-bin\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#20 C:\xampp\yii-bin\framework\web\CController.php(1146): CAccessControlFilter->filter()
+#21 C:\xampp\yii-bin\framework\web\filters\CInlineFilter.php(59): RiwayatBerobatController->filterAccessControl()
+#22 C:\xampp\yii-bin\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter()
+#23 C:\xampp\yii-bin\framework\web\CController.php(292): CFilterChain->run()
+#24 C:\xampp\yii-bin\framework\web\CController.php(266): RiwayatBerobatController->runActionWithFilters()
+#25 C:\xampp\yii-bin\framework\web\CWebApplication.php(283): RiwayatBerobatController->run()
+#26 C:\xampp\yii-bin\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#27 C:\xampp\yii-bin\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#28 C:\xampp\htdocs\klinik\index.php(13): CWebApplication->run()
+REQUEST_URI=/klinik/riwayatBerobat/create
+in C:\xampp\htdocs\klinik\protected\views\riwayatBerobat\_form.php (19)
+in C:\xampp\htdocs\klinik\protected\views\riwayatBerobat\create.php (18)
+in C:\xampp\htdocs\klinik\protected\controllers\RiwayatBerobatController.php (79)
+2013/12/24 15:07:38 [error] [php] include(numeric.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory (C:\xampp\yii-bin\framework\YiiBase.php:423)
+Stack trace:
+#0 C:\xampp\yii-bin\framework\validators\CValidator.php(187): import()
+#1 C:\xampp\yii-bin\framework\base\CModel.php(285): createValidator()
+#2 C:\xampp\yii-bin\framework\base\CModel.php(259): RiwayatBerobat->createValidators()
+#3 C:\xampp\yii-bin\framework\web\helpers\CHtml.php(1871): RiwayatBerobat->getValidators()
+#4 C:\xampp\yii-bin\framework\web\helpers\CHtml.php(1217): activeInputField()
+#5 C:\xampp\yii-bin\framework\web\widgets\CActiveForm.php(658): activeTextField()
+#6 C:\xampp\htdocs\klinik\protected\views\riwayatBerobat\_search.php(16): CActiveForm->textField()
+#7 C:\xampp\yii-bin\framework\web\CBaseController.php(127): require()
+#8 C:\xampp\yii-bin\framework\web\CBaseController.php(96): RiwayatBerobatController->renderInternal()
+#9 C:\xampp\yii-bin\framework\web\CController.php(870): RiwayatBerobatController->renderFile()
+#10 C:\xampp\htdocs\klinik\protected\views\riwayatBerobat\admin.php(34): RiwayatBerobatController->renderPartial()
+#11 C:\xampp\yii-bin\framework\web\CBaseController.php(127): require()
+#12 C:\xampp\yii-bin\framework\web\CBaseController.php(96): RiwayatBerobatController->renderInternal()
+#13 C:\xampp\yii-bin\framework\web\CController.php(870): RiwayatBerobatController->renderFile()
+#14 C:\xampp\yii-bin\framework\web\CController.php(783): RiwayatBerobatController->renderPartial()
+#15 C:\xampp\htdocs\klinik\protected\controllers\RiwayatBerobatController.php(143): RiwayatBerobatController->render()
+#16 C:\xampp\yii-bin\framework\web\actions\CInlineAction.php(50): RiwayatBerobatController->actionAdmin()
+#17 C:\xampp\yii-bin\framework\web\CController.php(309): CInlineAction->runWithParams()
+#18 C:\xampp\yii-bin\framework\web\filters\CFilterChain.php(134): RiwayatBerobatController->runAction()
+#19 C:\xampp\yii-bin\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#20 C:\xampp\yii-bin\framework\web\CController.php(1146): CAccessControlFilter->filter()
+#21 C:\xampp\yii-bin\framework\web\filters\CInlineFilter.php(59): RiwayatBerobatController->filterAccessControl()
+#22 C:\xampp\yii-bin\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter()
+#23 C:\xampp\yii-bin\framework\web\CController.php(292): CFilterChain->run()
+#24 C:\xampp\yii-bin\framework\web\CController.php(266): RiwayatBerobatController->runActionWithFilters()
+#25 C:\xampp\yii-bin\framework\web\CWebApplication.php(283): RiwayatBerobatController->run()
+#26 C:\xampp\yii-bin\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#27 C:\xampp\yii-bin\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#28 C:\xampp\htdocs\klinik\index.php(13): CWebApplication->run()
+REQUEST_URI=/klinik/riwayatBerobat/admin
+in C:\xampp\htdocs\klinik\protected\views\riwayatBerobat\_search.php (16)
+in C:\xampp\htdocs\klinik\protected\views\riwayatBerobat\admin.php (34)
+in C:\xampp\htdocs\klinik\protected\controllers\RiwayatBerobatController.php (143)
+2013/12/24 15:07:39 [error] [php] include(numeric.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory (C:\xampp\yii-bin\framework\YiiBase.php:423)
+Stack trace:
+#0 C:\xampp\yii-bin\framework\validators\CValidator.php(187): import()
+#1 C:\xampp\yii-bin\framework\base\CModel.php(285): createValidator()
+#2 C:\xampp\yii-bin\framework\base\CModel.php(259): RiwayatBerobat->createValidators()
+#3 C:\xampp\yii-bin\framework\web\helpers\CHtml.php(1871): RiwayatBerobat->getValidators()
+#4 C:\xampp\yii-bin\framework\web\helpers\CHtml.php(1217): activeInputField()
+#5 C:\xampp\yii-bin\framework\web\widgets\CActiveForm.php(658): activeTextField()
+#6 C:\xampp\htdocs\klinik\protected\views\riwayatBerobat\_search.php(16): CActiveForm->textField()
+#7 C:\xampp\yii-bin\framework\web\CBaseController.php(127): require()
+#8 C:\xampp\yii-bin\framework\web\CBaseController.php(96): RiwayatBerobatController->renderInternal()
+#9 C:\xampp\yii-bin\framework\web\CController.php(870): RiwayatBerobatController->renderFile()
+#10 C:\xampp\htdocs\klinik\protected\views\riwayatBerobat\admin.php(34): RiwayatBerobatController->renderPartial()
+#11 C:\xampp\yii-bin\framework\web\CBaseController.php(127): require()
+#12 C:\xampp\yii-bin\framework\web\CBaseController.php(96): RiwayatBerobatController->renderInternal()
+#13 C:\xampp\yii-bin\framework\web\CController.php(870): RiwayatBerobatController->renderFile()
+#14 C:\xampp\yii-bin\framework\web\CController.php(783): RiwayatBerobatController->renderPartial()
+#15 C:\xampp\htdocs\klinik\protected\controllers\RiwayatBerobatController.php(143): RiwayatBerobatController->render()
+#16 C:\xampp\yii-bin\framework\web\actions\CInlineAction.php(50): RiwayatBerobatController->actionAdmin()
+#17 C:\xampp\yii-bin\framework\web\CController.php(309): CInlineAction->runWithParams()
+#18 C:\xampp\yii-bin\framework\web\filters\CFilterChain.php(134): RiwayatBerobatController->runAction()
+#19 C:\xampp\yii-bin\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#20 C:\xampp\yii-bin\framework\web\CController.php(1146): CAccessControlFilter->filter()
+#21 C:\xampp\yii-bin\framework\web\filters\CInlineFilter.php(59): RiwayatBerobatController->filterAccessControl()
+#22 C:\xampp\yii-bin\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter()
+#23 C:\xampp\yii-bin\framework\web\CController.php(292): CFilterChain->run()
+#24 C:\xampp\yii-bin\framework\web\CController.php(266): RiwayatBerobatController->runActionWithFilters()
+#25 C:\xampp\yii-bin\framework\web\CWebApplication.php(283): RiwayatBerobatController->run()
+#26 C:\xampp\yii-bin\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#27 C:\xampp\yii-bin\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#28 C:\xampp\htdocs\klinik\index.php(13): CWebApplication->run()
+REQUEST_URI=/klinik/riwayatBerobat/admin
+in C:\xampp\htdocs\klinik\protected\views\riwayatBerobat\_search.php (16)
+in C:\xampp\htdocs\klinik\protected\views\riwayatBerobat\admin.php (34)
+in C:\xampp\htdocs\klinik\protected\controllers\RiwayatBerobatController.php (143)
+2013/12/24 15:07:40 [error] [php] include(numeric.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory (C:\xampp\yii-bin\framework\YiiBase.php:423)
+Stack trace:
+#0 C:\xampp\yii-bin\framework\validators\CValidator.php(187): import()
+#1 C:\xampp\yii-bin\framework\base\CModel.php(285): createValidator()
+#2 C:\xampp\yii-bin\framework\base\CModel.php(259): RiwayatBerobat->createValidators()
+#3 C:\xampp\yii-bin\framework\web\helpers\CHtml.php(1871): RiwayatBerobat->getValidators()
+#4 C:\xampp\yii-bin\framework\web\helpers\CHtml.php(1217): activeInputField()
+#5 C:\xampp\yii-bin\framework\web\widgets\CActiveForm.php(658): activeTextField()
+#6 C:\xampp\htdocs\klinik\protected\views\riwayatBerobat\_search.php(16): CActiveForm->textField()
+#7 C:\xampp\yii-bin\framework\web\CBaseController.php(127): require()
+#8 C:\xampp\yii-bin\framework\web\CBaseController.php(96): RiwayatBerobatController->renderInternal()
+#9 C:\xampp\yii-bin\framework\web\CController.php(870): RiwayatBerobatController->renderFile()
+#10 C:\xampp\htdocs\klinik\protected\views\riwayatBerobat\admin.php(34): RiwayatBerobatController->renderPartial()
+#11 C:\xampp\yii-bin\framework\web\CBaseController.php(127): require()
+#12 C:\xampp\yii-bin\framework\web\CBaseController.php(96): RiwayatBerobatController->renderInternal()
+#13 C:\xampp\yii-bin\framework\web\CController.php(870): RiwayatBerobatController->renderFile()
+#14 C:\xampp\yii-bin\framework\web\CController.php(783): RiwayatBerobatController->renderPartial()
+#15 C:\xampp\htdocs\klinik\protected\controllers\RiwayatBerobatController.php(143): RiwayatBerobatController->render()
+#16 C:\xampp\yii-bin\framework\web\actions\CInlineAction.php(50): RiwayatBerobatController->actionAdmin()
+#17 C:\xampp\yii-bin\framework\web\CController.php(309): CInlineAction->runWithParams()
+#18 C:\xampp\yii-bin\framework\web\filters\CFilterChain.php(134): RiwayatBerobatController->runAction()
+#19 C:\xampp\yii-bin\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#20 C:\xampp\yii-bin\framework\web\CController.php(1146): CAccessControlFilter->filter()
+#21 C:\xampp\yii-bin\framework\web\filters\CInlineFilter.php(59): RiwayatBerobatController->filterAccessControl()
+#22 C:\xampp\yii-bin\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter()
+#23 C:\xampp\yii-bin\framework\web\CController.php(292): CFilterChain->run()
+#24 C:\xampp\yii-bin\framework\web\CController.php(266): RiwayatBerobatController->runActionWithFilters()
+#25 C:\xampp\yii-bin\framework\web\CWebApplication.php(283): RiwayatBerobatController->run()
+#26 C:\xampp\yii-bin\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#27 C:\xampp\yii-bin\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#28 C:\xampp\htdocs\klinik\index.php(13): CWebApplication->run()
+REQUEST_URI=/klinik/riwayatBerobat/admin
+in C:\xampp\htdocs\klinik\protected\views\riwayatBerobat\_search.php (16)
+in C:\xampp\htdocs\klinik\protected\views\riwayatBerobat\admin.php (34)
+in C:\xampp\htdocs\klinik\protected\controllers\RiwayatBerobatController.php (143)
+2013/12/24 15:07:41 [error] [php] include(numeric.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory (C:\xampp\yii-bin\framework\YiiBase.php:423)
+Stack trace:
+#0 C:\xampp\yii-bin\framework\validators\CValidator.php(187): import()
+#1 C:\xampp\yii-bin\framework\base\CModel.php(285): createValidator()
+#2 C:\xampp\yii-bin\framework\base\CModel.php(259): RiwayatBerobat->createValidators()
+#3 C:\xampp\yii-bin\framework\web\helpers\CHtml.php(1871): RiwayatBerobat->getValidators()
+#4 C:\xampp\yii-bin\framework\web\helpers\CHtml.php(1217): activeInputField()
+#5 C:\xampp\yii-bin\framework\web\widgets\CActiveForm.php(658): activeTextField()
+#6 C:\xampp\htdocs\klinik\protected\views\riwayatBerobat\_search.php(16): CActiveForm->textField()
+#7 C:\xampp\yii-bin\framework\web\CBaseController.php(127): require()
+#8 C:\xampp\yii-bin\framework\web\CBaseController.php(96): RiwayatBerobatController->renderInternal()
+#9 C:\xampp\yii-bin\framework\web\CController.php(870): RiwayatBerobatController->renderFile()
+#10 C:\xampp\htdocs\klinik\protected\views\riwayatBerobat\admin.php(34): RiwayatBerobatController->renderPartial()
+#11 C:\xampp\yii-bin\framework\web\CBaseController.php(127): require()
+#12 C:\xampp\yii-bin\framework\web\CBaseController.php(96): RiwayatBerobatController->renderInternal()
+#13 C:\xampp\yii-bin\framework\web\CController.php(870): RiwayatBerobatController->renderFile()
+#14 C:\xampp\yii-bin\framework\web\CController.php(783): RiwayatBerobatController->renderPartial()
+#15 C:\xampp\htdocs\klinik\protected\controllers\RiwayatBerobatController.php(143): RiwayatBerobatController->render()
+#16 C:\xampp\yii-bin\framework\web\actions\CInlineAction.php(50): RiwayatBerobatController->actionAdmin()
+#17 C:\xampp\yii-bin\framework\web\CController.php(309): CInlineAction->runWithParams()
+#18 C:\xampp\yii-bin\framework\web\filters\CFilterChain.php(134): RiwayatBerobatController->runAction()
+#19 C:\xampp\yii-bin\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#20 C:\xampp\yii-bin\framework\web\CController.php(1146): CAccessControlFilter->filter()
+#21 C:\xampp\yii-bin\framework\web\filters\CInlineFilter.php(59): RiwayatBerobatController->filterAccessControl()
+#22 C:\xampp\yii-bin\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter()
+#23 C:\xampp\yii-bin\framework\web\CController.php(292): CFilterChain->run()
+#24 C:\xampp\yii-bin\framework\web\CController.php(266): RiwayatBerobatController->runActionWithFilters()
+#25 C:\xampp\yii-bin\framework\web\CWebApplication.php(283): RiwayatBerobatController->run()
+#26 C:\xampp\yii-bin\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#27 C:\xampp\yii-bin\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#28 C:\xampp\htdocs\klinik\index.php(13): CWebApplication->run()
+REQUEST_URI=/klinik/riwayatBerobat/admin
+in C:\xampp\htdocs\klinik\protected\views\riwayatBerobat\_search.php (16)
+in C:\xampp\htdocs\klinik\protected\views\riwayatBerobat\admin.php (34)
+in C:\xampp\htdocs\klinik\protected\controllers\RiwayatBerobatController.php (143)
+2013/12/24 15:18:49 [error] [exception.CException] exception 'CException' with message 'Property "RiwayatBerobat.type_id" is not defined.' in C:\xampp\yii-bin\framework\base\CComponent.php:131
+Stack trace:
+#0 C:\xampp\yii-bin\framework\db\ar\CActiveRecord.php(144): CComponent->__get('type_id')
+#1 C:\xampp\yii-bin\framework\web\helpers\CHtml.php(2158): CActiveRecord->__get('type_id')
+#2 C:\xampp\yii-bin\framework\web\helpers\CHtml.php(1515): CHtml::resolveValue(Object(RiwayatBerobat), 'type_id')
+#3 C:\xampp\yii-bin\framework\web\widgets\CActiveForm.php(764): CHtml::activeDropDownList(Object(RiwayatBerobat), 'type_id', Array, Array)
+#4 C:\xampp\htdocs\klinik\protected\views\riwayatBerobat\_form.php(70): CActiveForm->dropDownList(Object(RiwayatBerobat), 'type_id', Array, Array)
+#5 C:\xampp\yii-bin\framework\web\CBaseController.php(127): require('C:\xampp\htdocs...')
+#6 C:\xampp\yii-bin\framework\web\CBaseController.php(96): CBaseController->renderInternal('C:\xampp\htdocs...', Array, true)
+#7 C:\xampp\yii-bin\framework\web\CController.php(870): CBaseController->renderFile('C:\xampp\htdocs...', Array, true)
+#8 C:\xampp\htdocs\klinik\protected\views\riwayatBerobat\create.php(18): CController->renderPartial('_form', Array)
+#9 C:\xampp\yii-bin\framework\web\CBaseController.php(127): require('C:\xampp\htdocs...')
+#10 C:\xampp\yii-bin\framework\web\CBaseController.php(96): CBaseController->renderInternal('C:\xampp\htdocs...', Array, true)
+#11 C:\xampp\yii-bin\framework\web\CController.php(870): CBaseController->renderFile('C:\xampp\htdocs...', Array, true)
+#12 C:\xampp\yii-bin\framework\web\CController.php(783): CController->renderPartial('create', Array, true)
+#13 C:\xampp\htdocs\klinik\protected\controllers\RiwayatBerobatController.php(79): CController->render('create', Array)
+#14 C:\xampp\yii-bin\framework\web\actions\CInlineAction.php(50): RiwayatBerobatController->actionCreate()
+#15 C:\xampp\yii-bin\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#16 C:\xampp\yii-bin\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#17 C:\xampp\yii-bin\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#18 C:\xampp\yii-bin\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#19 C:\xampp\yii-bin\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#20 C:\xampp\yii-bin\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#21 C:\xampp\yii-bin\framework\web\CController.php(292): CFilterChain->run()
+#22 C:\xampp\yii-bin\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#23 C:\xampp\yii-bin\framework\web\CWebApplication.php(283): CController->run('create')
+#24 C:\xampp\yii-bin\framework\web\CWebApplication.php(142): CWebApplication->runController('riwayatBerobat/...')
+#25 C:\xampp\yii-bin\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#26 C:\xampp\htdocs\klinik\index.php(13): CApplication->run()
+#27 {main}
+REQUEST_URI=/klinik/riwayatBerobat/create
+HTTP_REFERER=http://localhost/klinik/riwayatBerobat/admin
+---
+2013/12/24 15:18:58 [error] [exception.CException] exception 'CException' with message 'Property "RiwayatBerobat." is not defined.' in C:\xampp\yii-bin\framework\base\CComponent.php:131
+Stack trace:
+#0 C:\xampp\yii-bin\framework\db\ar\CActiveRecord.php(144): CComponent->__get('')
+#1 C:\xampp\yii-bin\framework\web\helpers\CHtml.php(2158): CActiveRecord->__get('')
+#2 C:\xampp\yii-bin\framework\web\helpers\CHtml.php(1515): CHtml::resolveValue(Object(RiwayatBerobat), NULL)
+#3 C:\xampp\yii-bin\framework\web\widgets\CActiveForm.php(764): CHtml::activeDropDownList(Object(RiwayatBerobat), NULL, Array, Array)
+#4 C:\xampp\htdocs\klinik\protected\views\riwayatBerobat\_form.php(70): CActiveForm->dropDownList(Object(RiwayatBerobat), NULL, Array, Array)
+#5 C:\xampp\yii-bin\framework\web\CBaseController.php(127): require('C:\xampp\htdocs...')
+#6 C:\xampp\yii-bin\framework\web\CBaseController.php(96): CBaseController->renderInternal('C:\xampp\htdocs...', Array, true)
+#7 C:\xampp\yii-bin\framework\web\CController.php(870): CBaseController->renderFile('C:\xampp\htdocs...', Array, true)
+#8 C:\xampp\htdocs\klinik\protected\views\riwayatBerobat\create.php(18): CController->renderPartial('_form', Array)
+#9 C:\xampp\yii-bin\framework\web\CBaseController.php(127): require('C:\xampp\htdocs...')
+#10 C:\xampp\yii-bin\framework\web\CBaseController.php(96): CBaseController->renderInternal('C:\xampp\htdocs...', Array, true)
+#11 C:\xampp\yii-bin\framework\web\CController.php(870): CBaseController->renderFile('C:\xampp\htdocs...', Array, true)
+#12 C:\xampp\yii-bin\framework\web\CController.php(783): CController->renderPartial('create', Array, true)
+#13 C:\xampp\htdocs\klinik\protected\controllers\RiwayatBerobatController.php(79): CController->render('create', Array)
+#14 C:\xampp\yii-bin\framework\web\actions\CInlineAction.php(50): RiwayatBerobatController->actionCreate()
+#15 C:\xampp\yii-bin\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#16 C:\xampp\yii-bin\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#17 C:\xampp\yii-bin\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#18 C:\xampp\yii-bin\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#19 C:\xampp\yii-bin\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#20 C:\xampp\yii-bin\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#21 C:\xampp\yii-bin\framework\web\CController.php(292): CFilterChain->run()
+#22 C:\xampp\yii-bin\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#23 C:\xampp\yii-bin\framework\web\CWebApplication.php(283): CController->run('create')
+#24 C:\xampp\yii-bin\framework\web\CWebApplication.php(142): CWebApplication->runController('riwayatBerobat/...')
+#25 C:\xampp\yii-bin\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#26 C:\xampp\htdocs\klinik\index.php(13): CApplication->run()
+#27 {main}
+REQUEST_URI=/klinik/riwayatBerobat/create
+HTTP_REFERER=http://localhost/klinik/riwayatBerobat/admin
+---
+2013/12/24 15:20:00 [error] [php] Object of class Obat could not be converted to string (C:\xampp\yii-bin\framework\web\helpers\CHtml.php:1978)
+Stack trace:
+#0 C:\xampp\htdocs\klinik\protected\views\riwayatBerobat\_form.php(70): CActiveForm->dropDownList()
+#1 C:\xampp\yii-bin\framework\web\CBaseController.php(127): require()
+#2 C:\xampp\yii-bin\framework\web\CBaseController.php(96): RiwayatBerobatController->renderInternal()
+#3 C:\xampp\yii-bin\framework\web\CController.php(870): RiwayatBerobatController->renderFile()
+#4 C:\xampp\htdocs\klinik\protected\views\riwayatBerobat\create.php(18): RiwayatBerobatController->renderPartial()
+#5 C:\xampp\yii-bin\framework\web\CBaseController.php(127): require()
+#6 C:\xampp\yii-bin\framework\web\CBaseController.php(96): RiwayatBerobatController->renderInternal()
+#7 C:\xampp\yii-bin\framework\web\CController.php(870): RiwayatBerobatController->renderFile()
+#8 C:\xampp\yii-bin\framework\web\CController.php(783): RiwayatBerobatController->renderPartial()
+#9 C:\xampp\htdocs\klinik\protected\controllers\RiwayatBerobatController.php(79): RiwayatBerobatController->render()
+#10 C:\xampp\yii-bin\framework\web\actions\CInlineAction.php(50): RiwayatBerobatController->actionCreate()
+#11 C:\xampp\yii-bin\framework\web\CController.php(309): CInlineAction->runWithParams()
+#12 C:\xampp\yii-bin\framework\web\filters\CFilterChain.php(134): RiwayatBerobatController->runAction()
+#13 C:\xampp\yii-bin\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#14 C:\xampp\yii-bin\framework\web\CController.php(1146): CAccessControlFilter->filter()
+#15 C:\xampp\yii-bin\framework\web\filters\CInlineFilter.php(59): RiwayatBerobatController->filterAccessControl()
+#16 C:\xampp\yii-bin\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter()
+#17 C:\xampp\yii-bin\framework\web\CController.php(292): CFilterChain->run()
+#18 C:\xampp\yii-bin\framework\web\CController.php(266): RiwayatBerobatController->runActionWithFilters()
+#19 C:\xampp\yii-bin\framework\web\CWebApplication.php(283): RiwayatBerobatController->run()
+#20 C:\xampp\yii-bin\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#21 C:\xampp\yii-bin\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#22 C:\xampp\htdocs\klinik\index.php(13): CWebApplication->run()
+REQUEST_URI=/klinik/riwayatBerobat/create
+in C:\xampp\htdocs\klinik\protected\views\riwayatBerobat\_form.php (70)
+in C:\xampp\htdocs\klinik\protected\views\riwayatBerobat\create.php (18)
+in C:\xampp\htdocs\klinik\protected\controllers\RiwayatBerobatController.php (79)
+2013/12/24 15:20:19 [error] [php] Object of class Obat could not be converted to string (C:\xampp\yii-bin\framework\web\helpers\CHtml.php:1978)
+Stack trace:
+#0 C:\xampp\htdocs\klinik\protected\views\riwayatBerobat\_form.php(70): CActiveForm->dropDownList()
+#1 C:\xampp\yii-bin\framework\web\CBaseController.php(127): require()
+#2 C:\xampp\yii-bin\framework\web\CBaseController.php(96): RiwayatBerobatController->renderInternal()
+#3 C:\xampp\yii-bin\framework\web\CController.php(870): RiwayatBerobatController->renderFile()
+#4 C:\xampp\htdocs\klinik\protected\views\riwayatBerobat\create.php(18): RiwayatBerobatController->renderPartial()
+#5 C:\xampp\yii-bin\framework\web\CBaseController.php(127): require()
+#6 C:\xampp\yii-bin\framework\web\CBaseController.php(96): RiwayatBerobatController->renderInternal()
+#7 C:\xampp\yii-bin\framework\web\CController.php(870): RiwayatBerobatController->renderFile()
+#8 C:\xampp\yii-bin\framework\web\CController.php(783): RiwayatBerobatController->renderPartial()
+#9 C:\xampp\htdocs\klinik\protected\controllers\RiwayatBerobatController.php(79): RiwayatBerobatController->render()
+#10 C:\xampp\yii-bin\framework\web\actions\CInlineAction.php(50): RiwayatBerobatController->actionCreate()
+#11 C:\xampp\yii-bin\framework\web\CController.php(309): CInlineAction->runWithParams()
+#12 C:\xampp\yii-bin\framework\web\filters\CFilterChain.php(134): RiwayatBerobatController->runAction()
+#13 C:\xampp\yii-bin\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#14 C:\xampp\yii-bin\framework\web\CController.php(1146): CAccessControlFilter->filter()
+#15 C:\xampp\yii-bin\framework\web\filters\CInlineFilter.php(59): RiwayatBerobatController->filterAccessControl()
+#16 C:\xampp\yii-bin\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter()
+#17 C:\xampp\yii-bin\framework\web\CController.php(292): CFilterChain->run()
+#18 C:\xampp\yii-bin\framework\web\CController.php(266): RiwayatBerobatController->runActionWithFilters()
+#19 C:\xampp\yii-bin\framework\web\CWebApplication.php(283): RiwayatBerobatController->run()
+#20 C:\xampp\yii-bin\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#21 C:\xampp\yii-bin\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#22 C:\xampp\htdocs\klinik\index.php(13): CWebApplication->run()
+REQUEST_URI=/klinik/riwayatBerobat/create
+in C:\xampp\htdocs\klinik\protected\views\riwayatBerobat\_form.php (70)
+in C:\xampp\htdocs\klinik\protected\views\riwayatBerobat\create.php (18)
+in C:\xampp\htdocs\klinik\protected\controllers\RiwayatBerobatController.php (79)
+2013/12/24 15:20:20 [error] [php] Object of class Obat could not be converted to string (C:\xampp\yii-bin\framework\web\helpers\CHtml.php:1978)
+Stack trace:
+#0 C:\xampp\htdocs\klinik\protected\views\riwayatBerobat\_form.php(70): CActiveForm->dropDownList()
+#1 C:\xampp\yii-bin\framework\web\CBaseController.php(127): require()
+#2 C:\xampp\yii-bin\framework\web\CBaseController.php(96): RiwayatBerobatController->renderInternal()
+#3 C:\xampp\yii-bin\framework\web\CController.php(870): RiwayatBerobatController->renderFile()
+#4 C:\xampp\htdocs\klinik\protected\views\riwayatBerobat\create.php(18): RiwayatBerobatController->renderPartial()
+#5 C:\xampp\yii-bin\framework\web\CBaseController.php(127): require()
+#6 C:\xampp\yii-bin\framework\web\CBaseController.php(96): RiwayatBerobatController->renderInternal()
+#7 C:\xampp\yii-bin\framework\web\CController.php(870): RiwayatBerobatController->renderFile()
+#8 C:\xampp\yii-bin\framework\web\CController.php(783): RiwayatBerobatController->renderPartial()
+#9 C:\xampp\htdocs\klinik\protected\controllers\RiwayatBerobatController.php(79): RiwayatBerobatController->render()
+#10 C:\xampp\yii-bin\framework\web\actions\CInlineAction.php(50): RiwayatBerobatController->actionCreate()
+#11 C:\xampp\yii-bin\framework\web\CController.php(309): CInlineAction->runWithParams()
+#12 C:\xampp\yii-bin\framework\web\filters\CFilterChain.php(134): RiwayatBerobatController->runAction()
+#13 C:\xampp\yii-bin\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#14 C:\xampp\yii-bin\framework\web\CController.php(1146): CAccessControlFilter->filter()
+#15 C:\xampp\yii-bin\framework\web\filters\CInlineFilter.php(59): RiwayatBerobatController->filterAccessControl()
+#16 C:\xampp\yii-bin\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter()
+#17 C:\xampp\yii-bin\framework\web\CController.php(292): CFilterChain->run()
+#18 C:\xampp\yii-bin\framework\web\CController.php(266): RiwayatBerobatController->runActionWithFilters()
+#19 C:\xampp\yii-bin\framework\web\CWebApplication.php(283): RiwayatBerobatController->run()
+#20 C:\xampp\yii-bin\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#21 C:\xampp\yii-bin\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#22 C:\xampp\htdocs\klinik\index.php(13): CWebApplication->run()
+REQUEST_URI=/klinik/riwayatBerobat/create
+in C:\xampp\htdocs\klinik\protected\views\riwayatBerobat\_form.php (70)
+in C:\xampp\htdocs\klinik\protected\views\riwayatBerobat\create.php (18)
+in C:\xampp\htdocs\klinik\protected\controllers\RiwayatBerobatController.php (79)
+2013/12/24 15:42:52 [error] [php] Undefined variable: selected (C:\xampp\htdocs\klinik\protected\views\riwayatBerobat\_form.php:80)
+Stack trace:
+#0 C:\xampp\yii-bin\framework\web\CController.php(870): RiwayatBerobatController->renderFile()
+#1 C:\xampp\htdocs\klinik\protected\views\riwayatBerobat\update.php(21): RiwayatBerobatController->renderPartial()
+#2 C:\xampp\yii-bin\framework\web\CBaseController.php(127): require()
+#3 C:\xampp\yii-bin\framework\web\CBaseController.php(96): RiwayatBerobatController->renderInternal()
+#4 C:\xampp\yii-bin\framework\web\CController.php(870): RiwayatBerobatController->renderFile()
+#5 C:\xampp\yii-bin\framework\web\CController.php(783): RiwayatBerobatController->renderPartial()
+#6 C:\xampp\htdocs\klinik\protected\controllers\RiwayatBerobatController.php(103): RiwayatBerobatController->render()
+#7 unknown(0): RiwayatBerobatController->actionUpdate()
+#8 C:\xampp\yii-bin\framework\web\actions\CAction.php(107): ReflectionMethod->invokeArgs()
+#9 C:\xampp\yii-bin\framework\web\actions\CInlineAction.php(48): CInlineAction->runWithParamsInternal()
+#10 C:\xampp\yii-bin\framework\web\CController.php(309): CInlineAction->runWithParams()
+#11 C:\xampp\yii-bin\framework\web\filters\CFilterChain.php(134): RiwayatBerobatController->runAction()
+#12 C:\xampp\yii-bin\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#13 C:\xampp\yii-bin\framework\web\CController.php(1146): CAccessControlFilter->filter()
+#14 C:\xampp\yii-bin\framework\web\filters\CInlineFilter.php(59): RiwayatBerobatController->filterAccessControl()
+#15 C:\xampp\yii-bin\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter()
+#16 C:\xampp\yii-bin\framework\web\CController.php(292): CFilterChain->run()
+#17 C:\xampp\yii-bin\framework\web\CController.php(266): RiwayatBerobatController->runActionWithFilters()
+#18 C:\xampp\yii-bin\framework\web\CWebApplication.php(283): RiwayatBerobatController->run()
+#19 C:\xampp\yii-bin\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#20 C:\xampp\yii-bin\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#21 C:\xampp\htdocs\klinik\index.php(13): CWebApplication->run()
+REQUEST_URI=/klinik/riwayatBerobat/update/1
+in C:\xampp\htdocs\klinik\protected\views\riwayatBerobat\_form.php (80)
+in C:\xampp\htdocs\klinik\protected\views\riwayatBerobat\update.php (21)
+in C:\xampp\htdocs\klinik\protected\controllers\RiwayatBerobatController.php (103)
+2013/12/24 15:44:29 [error] [php] Undefined index: RiwayatBerobat (C:\xampp\htdocs\klinik\protected\controllers\RiwayatBerobatController.php:70)
+Stack trace:
+#0 C:\xampp\yii-bin\framework\web\filters\CFilterChain.php(134): RiwayatBerobatController->runAction()
+#1 C:\xampp\yii-bin\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#2 C:\xampp\yii-bin\framework\web\CController.php(1146): CAccessControlFilter->filter()
+#3 C:\xampp\yii-bin\framework\web\filters\CInlineFilter.php(59): RiwayatBerobatController->filterAccessControl()
+#4 C:\xampp\yii-bin\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter()
+#5 C:\xampp\yii-bin\framework\web\CController.php(292): CFilterChain->run()
+#6 C:\xampp\yii-bin\framework\web\CController.php(266): RiwayatBerobatController->runActionWithFilters()
+#7 C:\xampp\yii-bin\framework\web\CWebApplication.php(283): RiwayatBerobatController->run()
+#8 C:\xampp\yii-bin\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#9 C:\xampp\yii-bin\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\klinik\index.php(13): CWebApplication->run()
+REQUEST_URI=/klinik/riwayatBerobat/create
+in C:\xampp\htdocs\klinik\protected\controllers\RiwayatBerobatController.php (70)
+in C:\xampp\htdocs\klinik\index.php (13)
+2013/12/24 15:47:22 [error] [php] Undefined index: RiwayatBerobat (C:\xampp\htdocs\klinik\protected\controllers\RiwayatBerobatController.php:70)
+Stack trace:
+#0 C:\xampp\yii-bin\framework\web\filters\CFilterChain.php(134): RiwayatBerobatController->runAction()
+#1 C:\xampp\yii-bin\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#2 C:\xampp\yii-bin\framework\web\CController.php(1146): CAccessControlFilter->filter()
+#3 C:\xampp\yii-bin\framework\web\filters\CInlineFilter.php(59): RiwayatBerobatController->filterAccessControl()
+#4 C:\xampp\yii-bin\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter()
+#5 C:\xampp\yii-bin\framework\web\CController.php(292): CFilterChain->run()
+#6 C:\xampp\yii-bin\framework\web\CController.php(266): RiwayatBerobatController->runActionWithFilters()
+#7 C:\xampp\yii-bin\framework\web\CWebApplication.php(283): RiwayatBerobatController->run()
+#8 C:\xampp\yii-bin\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#9 C:\xampp\yii-bin\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\klinik\index.php(13): CWebApplication->run()
+REQUEST_URI=/klinik/riwayatBerobat/create
+in C:\xampp\htdocs\klinik\protected\controllers\RiwayatBerobatController.php (70)
+in C:\xampp\htdocs\klinik\index.php (13)
+2013/12/24 15:51:24 [error] [php] Undefined variable: id (C:\xampp\htdocs\klinik\protected\models\RiwayatBerobat.php:132)
+Stack trace:
+#0 C:\xampp\htdocs\klinik\protected\controllers\RiwayatBerobatController.php(75): RiwayatBerobat->save()
+#1 C:\xampp\yii-bin\framework\web\actions\CInlineAction.php(50): RiwayatBerobatController->actionCreate()
+#2 C:\xampp\yii-bin\framework\web\CController.php(309): CInlineAction->runWithParams()
+#3 C:\xampp\yii-bin\framework\web\filters\CFilterChain.php(134): RiwayatBerobatController->runAction()
+#4 C:\xampp\yii-bin\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#5 C:\xampp\yii-bin\framework\web\CController.php(1146): CAccessControlFilter->filter()
+#6 C:\xampp\yii-bin\framework\web\filters\CInlineFilter.php(59): RiwayatBerobatController->filterAccessControl()
+#7 C:\xampp\yii-bin\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter()
+#8 C:\xampp\yii-bin\framework\web\CController.php(292): CFilterChain->run()
+#9 C:\xampp\yii-bin\framework\web\CController.php(266): RiwayatBerobatController->runActionWithFilters()
+#10 C:\xampp\yii-bin\framework\web\CWebApplication.php(283): RiwayatBerobatController->run()
+#11 C:\xampp\yii-bin\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#12 C:\xampp\yii-bin\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#13 C:\xampp\htdocs\klinik\index.php(13): CWebApplication->run()
+REQUEST_URI=/klinik/riwayatBerobat/create
+in C:\xampp\htdocs\klinik\protected\models\RiwayatBerobat.php (132)
+in C:\xampp\htdocs\klinik\protected\controllers\RiwayatBerobatController.php (75)
+in C:\xampp\htdocs\klinik\index.php (13)
+2013/12/24 15:51:40 [error] [php] Undefined variable: id (C:\xampp\htdocs\klinik\protected\models\RiwayatBerobat.php:133)
+Stack trace:
+#0 C:\xampp\htdocs\klinik\protected\controllers\RiwayatBerobatController.php(75): RiwayatBerobat->save()
+#1 C:\xampp\yii-bin\framework\web\actions\CInlineAction.php(50): RiwayatBerobatController->actionCreate()
+#2 C:\xampp\yii-bin\framework\web\CController.php(309): CInlineAction->runWithParams()
+#3 C:\xampp\yii-bin\framework\web\filters\CFilterChain.php(134): RiwayatBerobatController->runAction()
+#4 C:\xampp\yii-bin\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#5 C:\xampp\yii-bin\framework\web\CController.php(1146): CAccessControlFilter->filter()
+#6 C:\xampp\yii-bin\framework\web\filters\CInlineFilter.php(59): RiwayatBerobatController->filterAccessControl()
+#7 C:\xampp\yii-bin\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter()
+#8 C:\xampp\yii-bin\framework\web\CController.php(292): CFilterChain->run()
+#9 C:\xampp\yii-bin\framework\web\CController.php(266): RiwayatBerobatController->runActionWithFilters()
+#10 C:\xampp\yii-bin\framework\web\CWebApplication.php(283): RiwayatBerobatController->run()
+#11 C:\xampp\yii-bin\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#12 C:\xampp\yii-bin\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#13 C:\xampp\htdocs\klinik\index.php(13): CWebApplication->run()
+REQUEST_URI=/klinik/riwayatBerobat/create
+in C:\xampp\htdocs\klinik\protected\models\RiwayatBerobat.php (133)
+in C:\xampp\htdocs\klinik\protected\controllers\RiwayatBerobatController.php (75)
+in C:\xampp\htdocs\klinik\index.php (13)
+2013/12/25 00:26:26 [error] [exception.CException] exception 'CException' with message 'Property "RiwayatBerobat.idObat" is not defined.' in C:\xampp\yii-bin\framework\base\CComponent.php:131
+Stack trace:
+#0 C:\xampp\yii-bin\framework\db\ar\CActiveRecord.php(144): CComponent->__get('idObat')
+#1 C:\xampp\htdocs\klinik\protected\views\riwayatBerobat\_form.php(74): CActiveRecord->__get('idObat')
+#2 C:\xampp\yii-bin\framework\web\CBaseController.php(127): require('C:\xampp\htdocs...')
+#3 C:\xampp\yii-bin\framework\web\CBaseController.php(96): CBaseController->renderInternal('C:\xampp\htdocs...', Array, true)
+#4 C:\xampp\yii-bin\framework\web\CController.php(870): CBaseController->renderFile('C:\xampp\htdocs...', Array, true)
+#5 C:\xampp\htdocs\klinik\protected\views\riwayatBerobat\update.php(21): CController->renderPartial('_form', Array)
+#6 C:\xampp\yii-bin\framework\web\CBaseController.php(127): require('C:\xampp\htdocs...')
+#7 C:\xampp\yii-bin\framework\web\CBaseController.php(96): CBaseController->renderInternal('C:\xampp\htdocs...', Array, true)
+#8 C:\xampp\yii-bin\framework\web\CController.php(870): CBaseController->renderFile('C:\xampp\htdocs...', Array, true)
+#9 C:\xampp\yii-bin\framework\web\CController.php(783): CController->renderPartial('update', Array, true)
+#10 C:\xampp\htdocs\klinik\protected\controllers\RiwayatBerobatController.php(105): CController->render('update', Array)
+#11 [internal function]: RiwayatBerobatController->actionUpdate('1')
+#12 C:\xampp\yii-bin\framework\web\actions\CAction.php(107): ReflectionMethod->invokeArgs(Object(RiwayatBerobatController), Array)
+#13 C:\xampp\yii-bin\framework\web\actions\CInlineAction.php(48): CAction->runWithParamsInternal(Object(RiwayatBerobatController), Object(ReflectionMethod), Array)
+#14 C:\xampp\yii-bin\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#15 C:\xampp\yii-bin\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#16 C:\xampp\yii-bin\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#17 C:\xampp\yii-bin\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#18 C:\xampp\yii-bin\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#19 C:\xampp\yii-bin\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#20 C:\xampp\yii-bin\framework\web\CController.php(292): CFilterChain->run()
+#21 C:\xampp\yii-bin\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#22 C:\xampp\yii-bin\framework\web\CWebApplication.php(283): CController->run('update')
+#23 C:\xampp\yii-bin\framework\web\CWebApplication.php(142): CWebApplication->runController('riwayatBerobat/...')
+#24 C:\xampp\yii-bin\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#25 C:\xampp\htdocs\klinik\index.php(13): CApplication->run()
+#26 {main}
+REQUEST_URI=/klinik/riwayatBerobat/update/1
+HTTP_REFERER=http://localhost/klinik/riwayatBerobat/admin
+---
+2013/12/25 00:30:25 [error] [php] Object of class DetailBerobat could not be converted to string (C:\xampp\htdocs\klinik\protected\views\riwayatBerobat\_form.php:81)
+Stack trace:
+#0 C:\xampp\yii-bin\framework\web\CController.php(870): RiwayatBerobatController->renderFile()
+#1 C:\xampp\htdocs\klinik\protected\views\riwayatBerobat\update.php(21): RiwayatBerobatController->renderPartial()
+#2 C:\xampp\yii-bin\framework\web\CBaseController.php(127): require()
+#3 C:\xampp\yii-bin\framework\web\CBaseController.php(96): RiwayatBerobatController->renderInternal()
+#4 C:\xampp\yii-bin\framework\web\CController.php(870): RiwayatBerobatController->renderFile()
+#5 C:\xampp\yii-bin\framework\web\CController.php(783): RiwayatBerobatController->renderPartial()
+#6 C:\xampp\htdocs\klinik\protected\controllers\RiwayatBerobatController.php(105): RiwayatBerobatController->render()
+#7 unknown(0): RiwayatBerobatController->actionUpdate()
+#8 C:\xampp\yii-bin\framework\web\actions\CAction.php(107): ReflectionMethod->invokeArgs()
+#9 C:\xampp\yii-bin\framework\web\actions\CInlineAction.php(48): CInlineAction->runWithParamsInternal()
+#10 C:\xampp\yii-bin\framework\web\CController.php(309): CInlineAction->runWithParams()
+#11 C:\xampp\yii-bin\framework\web\filters\CFilterChain.php(134): RiwayatBerobatController->runAction()
+#12 C:\xampp\yii-bin\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#13 C:\xampp\yii-bin\framework\web\CController.php(1146): CAccessControlFilter->filter()
+#14 C:\xampp\yii-bin\framework\web\filters\CInlineFilter.php(59): RiwayatBerobatController->filterAccessControl()
+#15 C:\xampp\yii-bin\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter()
+#16 C:\xampp\yii-bin\framework\web\CController.php(292): CFilterChain->run()
+#17 C:\xampp\yii-bin\framework\web\CController.php(266): RiwayatBerobatController->runActionWithFilters()
+#18 C:\xampp\yii-bin\framework\web\CWebApplication.php(283): RiwayatBerobatController->run()
+#19 C:\xampp\yii-bin\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#20 C:\xampp\yii-bin\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#21 C:\xampp\htdocs\klinik\index.php(13): CWebApplication->run()
+REQUEST_URI=/klinik/riwayatBerobat/update/10
+in C:\xampp\htdocs\klinik\protected\views\riwayatBerobat\_form.php (81)
+in C:\xampp\htdocs\klinik\protected\views\riwayatBerobat\update.php (21)
+in C:\xampp\htdocs\klinik\protected\controllers\RiwayatBerobatController.php (105)
+2013/12/25 00:54:09 [error] [exception.CException] exception 'CException' with message 'Property "UserIdentity._id" is not defined.' in C:\xampp\yii-bin\framework\base\CComponent.php:174
+Stack trace:
+#0 C:\xampp\htdocs\klinik\protected\components\UserIdentity.php(35): CComponent->__set('_id', '1')
+#1 C:\xampp\htdocs\klinik\protected\models\LoginForm.php(52): UserIdentity->authenticate()
+#2 C:\xampp\yii-bin\framework\validators\CInlineValidator.php(43): LoginForm->authenticate('password', Array)
+#3 C:\xampp\yii-bin\framework\validators\CValidator.php(214): CInlineValidator->validateAttribute(Object(LoginForm), 'password')
+#4 C:\xampp\yii-bin\framework\base\CModel.php(158): CValidator->validate(Object(LoginForm), NULL)
+#5 C:\xampp\htdocs\klinik\protected\controllers\SiteController.php(94): CModel->validate()
+#6 C:\xampp\yii-bin\framework\web\actions\CInlineAction.php(50): SiteController->actionLogin()
+#7 C:\xampp\yii-bin\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#8 C:\xampp\yii-bin\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#9 C:\xampp\yii-bin\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 C:\xampp\yii-bin\framework\web\CWebApplication.php(283): CController->run('login')
+#11 C:\xampp\yii-bin\framework\web\CWebApplication.php(142): CWebApplication->runController('site/login')
+#12 C:\xampp\yii-bin\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#13 C:\xampp\htdocs\klinik\index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/klinik/site/login
+HTTP_REFERER=http://localhost/klinik/site/login
+---
+2013/12/25 00:58:06 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in C:\xampp\yii-bin\framework\web\auth\CAccessControlFilter.php:170
+Stack trace:
+#0 C:\xampp\yii-bin\framework\web\auth\CAccessControlFilter.php(133): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 C:\xampp\yii-bin\framework\web\filters\CFilter.php(39): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\xampp\yii-bin\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#3 C:\xampp\yii-bin\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\xampp\yii-bin\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\xampp\yii-bin\framework\web\CController.php(292): CFilterChain->run()
+#6 C:\xampp\yii-bin\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\xampp\yii-bin\framework\web\CWebApplication.php(283): CController->run('admin')
+#8 C:\xampp\yii-bin\framework\web\CWebApplication.php(142): CWebApplication->runController('obat/admin')
+#9 C:\xampp\yii-bin\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\klinik\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/klinik/obat/admin
+HTTP_REFERER=http://localhost/klinik/site/login
+---
+2013/12/25 00:58:11 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in C:\xampp\yii-bin\framework\web\auth\CAccessControlFilter.php:170
+Stack trace:
+#0 C:\xampp\yii-bin\framework\web\auth\CAccessControlFilter.php(133): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 C:\xampp\yii-bin\framework\web\filters\CFilter.php(39): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\xampp\yii-bin\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#3 C:\xampp\yii-bin\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\xampp\yii-bin\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\xampp\yii-bin\framework\web\CController.php(292): CFilterChain->run()
+#6 C:\xampp\yii-bin\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\xampp\yii-bin\framework\web\CWebApplication.php(283): CController->run('admin')
+#8 C:\xampp\yii-bin\framework\web\CWebApplication.php(142): CWebApplication->runController('dokter/admin')
+#9 C:\xampp\yii-bin\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\klinik\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/klinik/dokter/admin
+HTTP_REFERER=http://localhost/klinik/obat/admin
+---
+2013/12/25 00:58:13 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in C:\xampp\yii-bin\framework\web\auth\CAccessControlFilter.php:170
+Stack trace:
+#0 C:\xampp\yii-bin\framework\web\auth\CAccessControlFilter.php(133): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 C:\xampp\yii-bin\framework\web\filters\CFilter.php(39): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\xampp\yii-bin\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#3 C:\xampp\yii-bin\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\xampp\yii-bin\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\xampp\yii-bin\framework\web\CController.php(292): CFilterChain->run()
+#6 C:\xampp\yii-bin\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\xampp\yii-bin\framework\web\CWebApplication.php(283): CController->run('admin')
+#8 C:\xampp\yii-bin\framework\web\CWebApplication.php(142): CWebApplication->runController('obat/admin')
+#9 C:\xampp\yii-bin\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\klinik\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/klinik/obat/admin
+HTTP_REFERER=http://localhost/klinik/dokter/admin
+---
+2013/12/25 00:58:14 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in C:\xampp\yii-bin\framework\web\auth\CAccessControlFilter.php:170
+Stack trace:
+#0 C:\xampp\yii-bin\framework\web\auth\CAccessControlFilter.php(133): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 C:\xampp\yii-bin\framework\web\filters\CFilter.php(39): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\xampp\yii-bin\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#3 C:\xampp\yii-bin\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\xampp\yii-bin\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\xampp\yii-bin\framework\web\CController.php(292): CFilterChain->run()
+#6 C:\xampp\yii-bin\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\xampp\yii-bin\framework\web\CWebApplication.php(283): CController->run('admin')
+#8 C:\xampp\yii-bin\framework\web\CWebApplication.php(142): CWebApplication->runController('suplier/admin')
+#9 C:\xampp\yii-bin\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\klinik\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/klinik/suplier/admin
+HTTP_REFERER=http://localhost/klinik/obat/admin
+---
+2013/12/25 00:58:14 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in C:\xampp\yii-bin\framework\web\auth\CAccessControlFilter.php:170
+Stack trace:
+#0 C:\xampp\yii-bin\framework\web\auth\CAccessControlFilter.php(133): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 C:\xampp\yii-bin\framework\web\filters\CFilter.php(39): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\xampp\yii-bin\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#3 C:\xampp\yii-bin\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\xampp\yii-bin\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\xampp\yii-bin\framework\web\CController.php(292): CFilterChain->run()
+#6 C:\xampp\yii-bin\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\xampp\yii-bin\framework\web\CWebApplication.php(283): CController->run('admin')
+#8 C:\xampp\yii-bin\framework\web\CWebApplication.php(142): CWebApplication->runController('dokter/admin')
+#9 C:\xampp\yii-bin\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\klinik\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/klinik/dokter/admin
+HTTP_REFERER=http://localhost/klinik/suplier/admin
+---
+2013/12/25 00:58:15 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in C:\xampp\yii-bin\framework\web\auth\CAccessControlFilter.php:170
+Stack trace:
+#0 C:\xampp\yii-bin\framework\web\auth\CAccessControlFilter.php(133): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 C:\xampp\yii-bin\framework\web\filters\CFilter.php(39): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\xampp\yii-bin\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#3 C:\xampp\yii-bin\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\xampp\yii-bin\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\xampp\yii-bin\framework\web\CController.php(292): CFilterChain->run()
+#6 C:\xampp\yii-bin\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\xampp\yii-bin\framework\web\CWebApplication.php(283): CController->run('admin')
+#8 C:\xampp\yii-bin\framework\web\CWebApplication.php(142): CWebApplication->runController('pasien/admin')
+#9 C:\xampp\yii-bin\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\klinik\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/klinik/pasien/admin
+HTTP_REFERER=http://localhost/klinik/dokter/admin
+---
+2013/12/25 00:58:15 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in C:\xampp\yii-bin\framework\web\auth\CAccessControlFilter.php:170
+Stack trace:
+#0 C:\xampp\yii-bin\framework\web\auth\CAccessControlFilter.php(133): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 C:\xampp\yii-bin\framework\web\filters\CFilter.php(39): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\xampp\yii-bin\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#3 C:\xampp\yii-bin\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\xampp\yii-bin\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\xampp\yii-bin\framework\web\CController.php(292): CFilterChain->run()
+#6 C:\xampp\yii-bin\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\xampp\yii-bin\framework\web\CWebApplication.php(283): CController->run('admin')
+#8 C:\xampp\yii-bin\framework\web\CWebApplication.php(142): CWebApplication->runController('riwayatBerobat/...')
+#9 C:\xampp\yii-bin\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\klinik\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/klinik/riwayatBerobat/admin
+HTTP_REFERER=http://localhost/klinik/pasien/admin
+---
+2013/12/25 01:03:01 [error] [exception.CException] exception 'CException' with message 'Property "CWebUser.userName" is not defined.' in C:\xampp\yii-bin\framework\base\CComponent.php:131
+Stack trace:
+#0 C:\xampp\yii-bin\framework\web\auth\CWebUser.php(141): CComponent->__get('userName')
+#1 C:\xampp\htdocs\klinik\protected\views\layouts\main.php(38): CWebUser->__get('userName')
+#2 C:\xampp\yii-bin\framework\web\CBaseController.php(127): require('C:\xampp\htdocs...')
+#3 C:\xampp\yii-bin\framework\web\CBaseController.php(96): CBaseController->renderInternal('C:\xampp\htdocs...', Array, true)
+#4 C:\xampp\yii-bin\framework\web\widgets\CContentDecorator.php(77): CBaseController->renderFile('C:\xampp\htdocs...', Array, true)
+#5 C:\xampp\yii-bin\framework\web\widgets\CContentDecorator.php(55): CContentDecorator->decorate('<div id="conten...')
+#6 C:\xampp\yii-bin\framework\web\widgets\COutputProcessor.php(45): CContentDecorator->processOutput('<div id="conten...')
+#7 C:\xampp\yii-bin\framework\web\CBaseController.php(207): COutputProcessor->run()
+#8 C:\xampp\yii-bin\framework\web\CBaseController.php(301): CBaseController->endWidget('CContentDecorat...')
+#9 C:\xampp\htdocs\klinik\protected\views\layouts\column1.php(6): CBaseController->endContent()
+#10 C:\xampp\yii-bin\framework\web\CBaseController.php(127): require('C:\xampp\htdocs...')
+#11 C:\xampp\yii-bin\framework\web\CBaseController.php(96): CBaseController->renderInternal('C:\xampp\htdocs...', Array, true)
+#12 C:\xampp\yii-bin\framework\web\CController.php(785): CBaseController->renderFile('C:\xampp\htdocs...', Array, true)
+#13 C:\xampp\htdocs\klinik\protected\controllers\SiteController.php(98): CController->render('login', Array)
+#14 C:\xampp\yii-bin\framework\web\actions\CInlineAction.php(50): SiteController->actionLogin()
+#15 C:\xampp\yii-bin\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#16 C:\xampp\yii-bin\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#17 C:\xampp\yii-bin\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#18 C:\xampp\yii-bin\framework\web\CWebApplication.php(283): CController->run('login')
+#19 C:\xampp\yii-bin\framework\web\CWebApplication.php(142): CWebApplication->runController('site/login')
+#20 C:\xampp\yii-bin\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#21 C:\xampp\htdocs\klinik\index.php(13): CApplication->run()
+#22 {main}
+REQUEST_URI=/klinik/site/login
+HTTP_REFERER=http://localhost/klinik/
+---
+2013/12/25 01:03:25 [error] [exception.CException] exception 'CException' with message 'Property "CWebUser.userName" is not defined.' in C:\xampp\yii-bin\framework\base\CComponent.php:131
+Stack trace:
+#0 C:\xampp\yii-bin\framework\web\auth\CWebUser.php(141): CComponent->__get('userName')
+#1 C:\xampp\htdocs\klinik\protected\views\layouts\main.php(38): CWebUser->__get('userName')
+#2 C:\xampp\yii-bin\framework\web\CBaseController.php(127): require('C:\xampp\htdocs...')
+#3 C:\xampp\yii-bin\framework\web\CBaseController.php(96): CBaseController->renderInternal('C:\xampp\htdocs...', Array, true)
+#4 C:\xampp\yii-bin\framework\web\widgets\CContentDecorator.php(77): CBaseController->renderFile('C:\xampp\htdocs...', Array, true)
+#5 C:\xampp\yii-bin\framework\web\widgets\CContentDecorator.php(55): CContentDecorator->decorate('<div id="conten...')
+#6 C:\xampp\yii-bin\framework\web\widgets\COutputProcessor.php(45): CContentDecorator->processOutput('<div id="conten...')
+#7 C:\xampp\yii-bin\framework\web\CBaseController.php(207): COutputProcessor->run()
+#8 C:\xampp\yii-bin\framework\web\CBaseController.php(301): CBaseController->endWidget('CContentDecorat...')
+#9 C:\xampp\htdocs\klinik\protected\views\layouts\column1.php(6): CBaseController->endContent()
+#10 C:\xampp\yii-bin\framework\web\CBaseController.php(127): require('C:\xampp\htdocs...')
+#11 C:\xampp\yii-bin\framework\web\CBaseController.php(96): CBaseController->renderInternal('C:\xampp\htdocs...', Array, true)
+#12 C:\xampp\yii-bin\framework\web\CController.php(785): CBaseController->renderFile('C:\xampp\htdocs...', Array, true)
+#13 C:\xampp\htdocs\klinik\protected\controllers\SiteController.php(98): CController->render('login', Array)
+#14 C:\xampp\yii-bin\framework\web\actions\CInlineAction.php(50): SiteController->actionLogin()
+#15 C:\xampp\yii-bin\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#16 C:\xampp\yii-bin\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#17 C:\xampp\yii-bin\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#18 C:\xampp\yii-bin\framework\web\CWebApplication.php(283): CController->run('login')
+#19 C:\xampp\yii-bin\framework\web\CWebApplication.php(142): CWebApplication->runController('site/login')
+#20 C:\xampp\yii-bin\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#21 C:\xampp\htdocs\klinik\index.php(13): CApplication->run()
+#22 {main}
+REQUEST_URI=/klinik/site/login
+HTTP_REFERER=http://localhost/klinik/
+---
+2013/12/25 01:03:47 [error] [exception.CException] exception 'CException' with message 'Property "CWebUser.userName" is not defined.' in C:\xampp\yii-bin\framework\base\CComponent.php:131
+Stack trace:
+#0 C:\xampp\yii-bin\framework\web\auth\CWebUser.php(141): CComponent->__get('userName')
+#1 C:\xampp\htdocs\klinik\protected\views\layouts\main.php(38): CWebUser->__get('userName')
+#2 C:\xampp\yii-bin\framework\web\CBaseController.php(127): require('C:\xampp\htdocs...')
+#3 C:\xampp\yii-bin\framework\web\CBaseController.php(96): CBaseController->renderInternal('C:\xampp\htdocs...', Array, true)
+#4 C:\xampp\yii-bin\framework\web\widgets\CContentDecorator.php(77): CBaseController->renderFile('C:\xampp\htdocs...', Array, true)
+#5 C:\xampp\yii-bin\framework\web\widgets\CContentDecorator.php(55): CContentDecorator->decorate('<div id="conten...')
+#6 C:\xampp\yii-bin\framework\web\widgets\COutputProcessor.php(45): CContentDecorator->processOutput('<div id="conten...')
+#7 C:\xampp\yii-bin\framework\web\CBaseController.php(207): COutputProcessor->run()
+#8 C:\xampp\yii-bin\framework\web\CBaseController.php(301): CBaseController->endWidget('CContentDecorat...')
+#9 C:\xampp\htdocs\klinik\protected\views\layouts\column1.php(6): CBaseController->endContent()
+#10 C:\xampp\yii-bin\framework\web\CBaseController.php(127): require('C:\xampp\htdocs...')
+#11 C:\xampp\yii-bin\framework\web\CBaseController.php(96): CBaseController->renderInternal('C:\xampp\htdocs...', Array, true)
+#12 C:\xampp\yii-bin\framework\web\CController.php(785): CBaseController->renderFile('C:\xampp\htdocs...', Array, true)
+#13 C:\xampp\htdocs\klinik\protected\controllers\SiteController.php(98): CController->render('login', Array)
+#14 C:\xampp\yii-bin\framework\web\actions\CInlineAction.php(50): SiteController->actionLogin()
+#15 C:\xampp\yii-bin\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#16 C:\xampp\yii-bin\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#17 C:\xampp\yii-bin\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#18 C:\xampp\yii-bin\framework\web\CWebApplication.php(283): CController->run('login')
+#19 C:\xampp\yii-bin\framework\web\CWebApplication.php(142): CWebApplication->runController('site/login')
+#20 C:\xampp\yii-bin\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#21 C:\xampp\htdocs\klinik\index.php(13): CApplication->run()
+#22 {main}
+REQUEST_URI=/klinik/site/login
+HTTP_REFERER=http://localhost/klinik/
+---
+2013/12/25 01:03:48 [error] [exception.CException] exception 'CException' with message 'Property "CWebUser.userName" is not defined.' in C:\xampp\yii-bin\framework\base\CComponent.php:131
+Stack trace:
+#0 C:\xampp\yii-bin\framework\web\auth\CWebUser.php(141): CComponent->__get('userName')
+#1 C:\xampp\htdocs\klinik\protected\views\layouts\main.php(38): CWebUser->__get('userName')
+#2 C:\xampp\yii-bin\framework\web\CBaseController.php(127): require('C:\xampp\htdocs...')
+#3 C:\xampp\yii-bin\framework\web\CBaseController.php(96): CBaseController->renderInternal('C:\xampp\htdocs...', Array, true)
+#4 C:\xampp\yii-bin\framework\web\widgets\CContentDecorator.php(77): CBaseController->renderFile('C:\xampp\htdocs...', Array, true)
+#5 C:\xampp\yii-bin\framework\web\widgets\CContentDecorator.php(55): CContentDecorator->decorate('<div id="conten...')
+#6 C:\xampp\yii-bin\framework\web\widgets\COutputProcessor.php(45): CContentDecorator->processOutput('<div id="conten...')
+#7 C:\xampp\yii-bin\framework\web\CBaseController.php(207): COutputProcessor->run()
+#8 C:\xampp\yii-bin\framework\web\CBaseController.php(301): CBaseController->endWidget('CContentDecorat...')
+#9 C:\xampp\htdocs\klinik\protected\views\layouts\column1.php(6): CBaseController->endContent()
+#10 C:\xampp\yii-bin\framework\web\CBaseController.php(127): require('C:\xampp\htdocs...')
+#11 C:\xampp\yii-bin\framework\web\CBaseController.php(96): CBaseController->renderInternal('C:\xampp\htdocs...', Array, true)
+#12 C:\xampp\yii-bin\framework\web\CController.php(785): CBaseController->renderFile('C:\xampp\htdocs...', Array, true)
+#13 C:\xampp\htdocs\klinik\protected\controllers\SiteController.php(98): CController->render('login', Array)
+#14 C:\xampp\yii-bin\framework\web\actions\CInlineAction.php(50): SiteController->actionLogin()
+#15 C:\xampp\yii-bin\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#16 C:\xampp\yii-bin\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#17 C:\xampp\yii-bin\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#18 C:\xampp\yii-bin\framework\web\CWebApplication.php(283): CController->run('login')
+#19 C:\xampp\yii-bin\framework\web\CWebApplication.php(142): CWebApplication->runController('site/login')
+#20 C:\xampp\yii-bin\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#21 C:\xampp\htdocs\klinik\index.php(13): CApplication->run()
+#22 {main}
+REQUEST_URI=/klinik/site/login
+HTTP_REFERER=http://localhost/klinik/
+---
+2013/12/25 01:06:46 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in C:\xampp\yii-bin\framework\web\auth\CAccessControlFilter.php:170
+Stack trace:
+#0 C:\xampp\yii-bin\framework\web\auth\CAccessControlFilter.php(133): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 C:\xampp\yii-bin\framework\web\filters\CFilter.php(39): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\xampp\yii-bin\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#3 C:\xampp\yii-bin\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\xampp\yii-bin\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\xampp\yii-bin\framework\web\CController.php(292): CFilterChain->run()
+#6 C:\xampp\yii-bin\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\xampp\yii-bin\framework\web\CWebApplication.php(283): CController->run('admin')
+#8 C:\xampp\yii-bin\framework\web\CWebApplication.php(142): CWebApplication->runController('suplier/admin')
+#9 C:\xampp\yii-bin\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\klinik\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/klinik/suplier/admin
+HTTP_REFERER=http://localhost/klinik/site/login
+---
+2013/12/25 01:06:51 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in C:\xampp\yii-bin\framework\web\auth\CAccessControlFilter.php:170
+Stack trace:
+#0 C:\xampp\yii-bin\framework\web\auth\CAccessControlFilter.php(133): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 C:\xampp\yii-bin\framework\web\filters\CFilter.php(39): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\xampp\yii-bin\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#3 C:\xampp\yii-bin\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\xampp\yii-bin\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\xampp\yii-bin\framework\web\CController.php(292): CFilterChain->run()
+#6 C:\xampp\yii-bin\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\xampp\yii-bin\framework\web\CWebApplication.php(283): CController->run('admin')
+#8 C:\xampp\yii-bin\framework\web\CWebApplication.php(142): CWebApplication->runController('dokter/admin')
+#9 C:\xampp\yii-bin\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\klinik\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/klinik/dokter/admin
+HTTP_REFERER=http://localhost/klinik/pasien/admin
+---
+2013/12/25 01:06:52 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in C:\xampp\yii-bin\framework\web\auth\CAccessControlFilter.php:170
+Stack trace:
+#0 C:\xampp\yii-bin\framework\web\auth\CAccessControlFilter.php(133): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 C:\xampp\yii-bin\framework\web\filters\CFilter.php(39): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\xampp\yii-bin\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#3 C:\xampp\yii-bin\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\xampp\yii-bin\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\xampp\yii-bin\framework\web\CController.php(292): CFilterChain->run()
+#6 C:\xampp\yii-bin\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\xampp\yii-bin\framework\web\CWebApplication.php(283): CController->run('admin')
+#8 C:\xampp\yii-bin\framework\web\CWebApplication.php(142): CWebApplication->runController('obat/admin')
+#9 C:\xampp\yii-bin\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\klinik\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/klinik/obat/admin
+HTTP_REFERER=http://localhost/klinik/dokter/admin
+---
+2013/12/25 01:06:53 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in C:\xampp\yii-bin\framework\web\auth\CAccessControlFilter.php:170
+Stack trace:
+#0 C:\xampp\yii-bin\framework\web\auth\CAccessControlFilter.php(133): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 C:\xampp\yii-bin\framework\web\filters\CFilter.php(39): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\xampp\yii-bin\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#3 C:\xampp\yii-bin\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\xampp\yii-bin\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\xampp\yii-bin\framework\web\CController.php(292): CFilterChain->run()
+#6 C:\xampp\yii-bin\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\xampp\yii-bin\framework\web\CWebApplication.php(283): CController->run('admin')
+#8 C:\xampp\yii-bin\framework\web\CWebApplication.php(142): CWebApplication->runController('suplier/admin')
+#9 C:\xampp\yii-bin\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\klinik\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/klinik/suplier/admin
+HTTP_REFERER=http://localhost/klinik/obat/admin
+---
+2013/12/25 01:07:13 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in C:\xampp\yii-bin\framework\web\auth\CAccessControlFilter.php:170
+Stack trace:
+#0 C:\xampp\yii-bin\framework\web\auth\CAccessControlFilter.php(133): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 C:\xampp\yii-bin\framework\web\filters\CFilter.php(39): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\xampp\yii-bin\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#3 C:\xampp\yii-bin\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\xampp\yii-bin\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\xampp\yii-bin\framework\web\CController.php(292): CFilterChain->run()
+#6 C:\xampp\yii-bin\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\xampp\yii-bin\framework\web\CWebApplication.php(283): CController->run('admin')
+#8 C:\xampp\yii-bin\framework\web\CWebApplication.php(142): CWebApplication->runController('suplier/admin')
+#9 C:\xampp\yii-bin\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\klinik\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/klinik/suplier/admin
+HTTP_REFERER=http://localhost/klinik/riwayatBerobat/admin
+---
+2013/12/25 01:10:49 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in C:\xampp\yii-bin\framework\web\auth\CAccessControlFilter.php:170
+Stack trace:
+#0 C:\xampp\yii-bin\framework\web\auth\CAccessControlFilter.php(133): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 C:\xampp\yii-bin\framework\web\filters\CFilter.php(39): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\xampp\yii-bin\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#3 C:\xampp\yii-bin\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\xampp\yii-bin\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\xampp\yii-bin\framework\web\CController.php(292): CFilterChain->run()
+#6 C:\xampp\yii-bin\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\xampp\yii-bin\framework\web\CWebApplication.php(283): CController->run('admin')
+#8 C:\xampp\yii-bin\framework\web\CWebApplication.php(142): CWebApplication->runController('obat/admin')
+#9 C:\xampp\yii-bin\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\klinik\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/klinik/obat/admin
+HTTP_REFERER=http://localhost/klinik/site/login
+---
+2013/12/25 01:12:57 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in C:\xampp\yii-bin\framework\web\auth\CAccessControlFilter.php:170
+Stack trace:
+#0 C:\xampp\yii-bin\framework\web\auth\CAccessControlFilter.php(133): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 C:\xampp\yii-bin\framework\web\filters\CFilter.php(39): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\xampp\yii-bin\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#3 C:\xampp\yii-bin\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\xampp\yii-bin\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\xampp\yii-bin\framework\web\CController.php(292): CFilterChain->run()
+#6 C:\xampp\yii-bin\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\xampp\yii-bin\framework\web\CWebApplication.php(283): CController->run('index')
+#8 C:\xampp\yii-bin\framework\web\CWebApplication.php(142): CWebApplication->runController('riwayatBerobat/...')
+#9 C:\xampp\yii-bin\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\klinik\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/klinik/riwayatBerobat/index
+HTTP_REFERER=http://localhost/klinik/riwayatBerobat/create
+---
+2013/12/25 01:13:41 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in C:\xampp\yii-bin\framework\web\auth\CAccessControlFilter.php:170
+Stack trace:
+#0 C:\xampp\yii-bin\framework\web\auth\CAccessControlFilter.php(133): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 C:\xampp\yii-bin\framework\web\filters\CFilter.php(39): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\xampp\yii-bin\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#3 C:\xampp\yii-bin\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\xampp\yii-bin\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\xampp\yii-bin\framework\web\CController.php(292): CFilterChain->run()
+#6 C:\xampp\yii-bin\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\xampp\yii-bin\framework\web\CWebApplication.php(283): CController->run('index')
+#8 C:\xampp\yii-bin\framework\web\CWebApplication.php(142): CWebApplication->runController('riwayatBerobat/...')
+#9 C:\xampp\yii-bin\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\klinik\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/klinik/riwayatBerobat/index
+HTTP_REFERER=http://localhost/klinik/riwayatBerobat/create
+---
+2013/12/25 01:13:43 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in C:\xampp\yii-bin\framework\web\auth\CAccessControlFilter.php:170
+Stack trace:
+#0 C:\xampp\yii-bin\framework\web\auth\CAccessControlFilter.php(133): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 C:\xampp\yii-bin\framework\web\filters\CFilter.php(39): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\xampp\yii-bin\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#3 C:\xampp\yii-bin\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\xampp\yii-bin\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\xampp\yii-bin\framework\web\CController.php(292): CFilterChain->run()
+#6 C:\xampp\yii-bin\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\xampp\yii-bin\framework\web\CWebApplication.php(283): CController->run('index')
+#8 C:\xampp\yii-bin\framework\web\CWebApplication.php(142): CWebApplication->runController('riwayatBerobat/...')
+#9 C:\xampp\yii-bin\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\klinik\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/klinik/riwayatBerobat/index
+HTTP_REFERER=http://localhost/klinik/riwayatBerobat/create
+---
+2013/12/25 01:13:43 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in C:\xampp\yii-bin\framework\web\auth\CAccessControlFilter.php:170
+Stack trace:
+#0 C:\xampp\yii-bin\framework\web\auth\CAccessControlFilter.php(133): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 C:\xampp\yii-bin\framework\web\filters\CFilter.php(39): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\xampp\yii-bin\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#3 C:\xampp\yii-bin\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\xampp\yii-bin\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\xampp\yii-bin\framework\web\CController.php(292): CFilterChain->run()
+#6 C:\xampp\yii-bin\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\xampp\yii-bin\framework\web\CWebApplication.php(283): CController->run('index')
+#8 C:\xampp\yii-bin\framework\web\CWebApplication.php(142): CWebApplication->runController('riwayatBerobat/...')
+#9 C:\xampp\yii-bin\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\klinik\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/klinik/riwayatBerobat/index
+HTTP_REFERER=http://localhost/klinik/riwayatBerobat/create
+---
+2013/12/25 01:22:19 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "operatr".' in C:\xampp\yii-bin\framework\web\CController.php:484
+Stack trace:
+#0 C:\xampp\yii-bin\framework\web\CController.php(271): CController->missingAction('operatr')
+#1 C:\xampp\yii-bin\framework\web\CWebApplication.php(283): CController->run('operatr')
+#2 C:\xampp\yii-bin\framework\web\CWebApplication.php(142): CWebApplication->runController('suplier/operatr')
+#3 C:\xampp\yii-bin\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\klinik\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/klinik/suplier/operatr
+---
+2013/12/25 01:22:22 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "operator".' in C:\xampp\yii-bin\framework\web\CController.php:484
+Stack trace:
+#0 C:\xampp\yii-bin\framework\web\CController.php(271): CController->missingAction('operator')
+#1 C:\xampp\yii-bin\framework\web\CWebApplication.php(283): CController->run('operator')
+#2 C:\xampp\yii-bin\framework\web\CWebApplication.php(142): CWebApplication->runController('suplier/operato...')
+#3 C:\xampp\yii-bin\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\klinik\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/klinik/suplier/operator
+---
+2013/12/25 01:22:56 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in C:\xampp\yii-bin\framework\web\auth\CAccessControlFilter.php:170
+Stack trace:
+#0 C:\xampp\yii-bin\framework\web\auth\CAccessControlFilter.php(133): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 C:\xampp\yii-bin\framework\web\filters\CFilter.php(39): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\xampp\yii-bin\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#3 C:\xampp\yii-bin\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\xampp\yii-bin\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\xampp\yii-bin\framework\web\CController.php(292): CFilterChain->run()
+#6 C:\xampp\yii-bin\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\xampp\yii-bin\framework\web\CWebApplication.php(283): CController->run('view')
+#8 C:\xampp\yii-bin\framework\web\CWebApplication.php(142): CWebApplication->runController('operator/view')
+#9 C:\xampp\yii-bin\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\klinik\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/klinik/operator/3
+HTTP_REFERER=http://localhost/klinik/operator/create
+---
+2013/12/25 01:23:29 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in C:\xampp\yii-bin\framework\web\auth\CAccessControlFilter.php:170
+Stack trace:
+#0 C:\xampp\yii-bin\framework\web\auth\CAccessControlFilter.php(133): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 C:\xampp\yii-bin\framework\web\filters\CFilter.php(39): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\xampp\yii-bin\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#3 C:\xampp\yii-bin\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\xampp\yii-bin\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\xampp\yii-bin\framework\web\CController.php(292): CFilterChain->run()
+#6 C:\xampp\yii-bin\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\xampp\yii-bin\framework\web\CWebApplication.php(283): CController->run('view')
+#8 C:\xampp\yii-bin\framework\web\CWebApplication.php(142): CWebApplication->runController('pasien/view')
+#9 C:\xampp\yii-bin\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\klinik\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/klinik/pasien/1
+HTTP_REFERER=http://localhost/klinik/pasien/admin
+---
+2013/12/25 01:23:39 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in C:\xampp\yii-bin\framework\web\auth\CAccessControlFilter.php:170
+Stack trace:
+#0 C:\xampp\yii-bin\framework\web\auth\CAccessControlFilter.php(133): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 C:\xampp\yii-bin\framework\web\filters\CFilter.php(39): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\xampp\yii-bin\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#3 C:\xampp\yii-bin\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\xampp\yii-bin\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\xampp\yii-bin\framework\web\CController.php(292): CFilterChain->run()
+#6 C:\xampp\yii-bin\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\xampp\yii-bin\framework\web\CWebApplication.php(283): CController->run('admin')
+#8 C:\xampp\yii-bin\framework\web\CWebApplication.php(142): CWebApplication->runController('riwayatBerobat/...')
+#9 C:\xampp\yii-bin\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\klinik\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/klinik/riwayatBerobat/admin
+HTTP_REFERER=http://localhost/klinik/site/login
+---
+2013/12/25 01:23:41 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in C:\xampp\yii-bin\framework\web\auth\CAccessControlFilter.php:170
+Stack trace:
+#0 C:\xampp\yii-bin\framework\web\auth\CAccessControlFilter.php(133): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 C:\xampp\yii-bin\framework\web\filters\CFilter.php(39): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\xampp\yii-bin\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#3 C:\xampp\yii-bin\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\xampp\yii-bin\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\xampp\yii-bin\framework\web\CController.php(292): CFilterChain->run()
+#6 C:\xampp\yii-bin\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\xampp\yii-bin\framework\web\CWebApplication.php(283): CController->run('admin')
+#8 C:\xampp\yii-bin\framework\web\CWebApplication.php(142): CWebApplication->runController('pasien/admin')
+#9 C:\xampp\yii-bin\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\klinik\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/klinik/pasien/admin
+HTTP_REFERER=http://localhost/klinik/riwayatBerobat/admin
+---
+2013/12/25 01:23:42 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in C:\xampp\yii-bin\framework\web\auth\CAccessControlFilter.php:170
+Stack trace:
+#0 C:\xampp\yii-bin\framework\web\auth\CAccessControlFilter.php(133): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 C:\xampp\yii-bin\framework\web\filters\CFilter.php(39): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\xampp\yii-bin\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#3 C:\xampp\yii-bin\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\xampp\yii-bin\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\xampp\yii-bin\framework\web\CController.php(292): CFilterChain->run()
+#6 C:\xampp\yii-bin\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\xampp\yii-bin\framework\web\CWebApplication.php(283): CController->run('admin')
+#8 C:\xampp\yii-bin\framework\web\CWebApplication.php(142): CWebApplication->runController('riwayatBerobat/...')
+#9 C:\xampp\yii-bin\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\klinik\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/klinik/riwayatBerobat/admin
+HTTP_REFERER=http://localhost/klinik/pasien/admin
+---
+2013/12/25 01:25:12 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in C:\xampp\yii-bin\framework\web\auth\CAccessControlFilter.php:170
+Stack trace:
+#0 C:\xampp\yii-bin\framework\web\auth\CAccessControlFilter.php(133): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 C:\xampp\yii-bin\framework\web\filters\CFilter.php(39): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\xampp\yii-bin\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#3 C:\xampp\yii-bin\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\xampp\yii-bin\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\xampp\yii-bin\framework\web\CController.php(292): CFilterChain->run()
+#6 C:\xampp\yii-bin\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\xampp\yii-bin\framework\web\CWebApplication.php(283): CController->run('admin')
+#8 C:\xampp\yii-bin\framework\web\CWebApplication.php(142): CWebApplication->runController('riwayatBerobat/...')
+#9 C:\xampp\yii-bin\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\klinik\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/klinik/riwayatBerobat/admin
+HTTP_REFERER=http://localhost/klinik/riwayatBerobat/admin
+---
+2013/12/25 01:25:12 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in C:\xampp\yii-bin\framework\web\auth\CAccessControlFilter.php:170
+Stack trace:
+#0 C:\xampp\yii-bin\framework\web\auth\CAccessControlFilter.php(133): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 C:\xampp\yii-bin\framework\web\filters\CFilter.php(39): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\xampp\yii-bin\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#3 C:\xampp\yii-bin\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\xampp\yii-bin\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\xampp\yii-bin\framework\web\CController.php(292): CFilterChain->run()
+#6 C:\xampp\yii-bin\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\xampp\yii-bin\framework\web\CWebApplication.php(283): CController->run('admin')
+#8 C:\xampp\yii-bin\framework\web\CWebApplication.php(142): CWebApplication->runController('pasien/admin')
+#9 C:\xampp\yii-bin\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\klinik\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/klinik/pasien/admin
+HTTP_REFERER=http://localhost/klinik/riwayatBerobat/admin
+---
+2013/12/25 01:28:12 [error] [exception.CException] exception 'CException' with message 'Property "UserIdentity.name" is read only.' in C:\xampp\yii-bin\framework\base\CComponent.php:171
+Stack trace:
+#0 C:\xampp\htdocs\klinik\protected\components\UserIdentity.php(46): CComponent->__set('name', 'operator')
+#1 C:\xampp\htdocs\klinik\protected\models\LoginForm.php(52): UserIdentity->authenticate()
+#2 C:\xampp\yii-bin\framework\validators\CInlineValidator.php(43): LoginForm->authenticate('password', Array)
+#3 C:\xampp\yii-bin\framework\validators\CValidator.php(214): CInlineValidator->validateAttribute(Object(LoginForm), 'password')
+#4 C:\xampp\yii-bin\framework\base\CModel.php(158): CValidator->validate(Object(LoginForm), NULL)
+#5 C:\xampp\htdocs\klinik\protected\controllers\SiteController.php(94): CModel->validate()
+#6 C:\xampp\yii-bin\framework\web\actions\CInlineAction.php(50): SiteController->actionLogin()
+#7 C:\xampp\yii-bin\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#8 C:\xampp\yii-bin\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#9 C:\xampp\yii-bin\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 C:\xampp\yii-bin\framework\web\CWebApplication.php(283): CController->run('login')
+#11 C:\xampp\yii-bin\framework\web\CWebApplication.php(142): CWebApplication->runController('site/login')
+#12 C:\xampp\yii-bin\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#13 C:\xampp\htdocs\klinik\index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/klinik/site/login
+HTTP_REFERER=http://localhost/klinik/site/login
+---
+2013/12/25 01:30:58 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in C:\xampp\yii-bin\framework\web\auth\CAccessControlFilter.php:170
+Stack trace:
+#0 C:\xampp\yii-bin\framework\web\auth\CAccessControlFilter.php(133): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 C:\xampp\yii-bin\framework\web\filters\CFilter.php(39): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\xampp\yii-bin\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#3 C:\xampp\yii-bin\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\xampp\yii-bin\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\xampp\yii-bin\framework\web\CController.php(292): CFilterChain->run()
+#6 C:\xampp\yii-bin\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\xampp\yii-bin\framework\web\CWebApplication.php(283): CController->run('admin')
+#8 C:\xampp\yii-bin\framework\web\CWebApplication.php(142): CWebApplication->runController('riwayatBerobat/...')
+#9 C:\xampp\yii-bin\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\klinik\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/klinik/riwayatBerobat/admin
+HTTP_REFERER=http://localhost/klinik/site/login
+---
+2013/12/25 01:31:12 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in C:\xampp\yii-bin\framework\web\auth\CAccessControlFilter.php:170
+Stack trace:
+#0 C:\xampp\yii-bin\framework\web\auth\CAccessControlFilter.php(133): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 C:\xampp\yii-bin\framework\web\filters\CFilter.php(39): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\xampp\yii-bin\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#3 C:\xampp\yii-bin\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\xampp\yii-bin\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\xampp\yii-bin\framework\web\CController.php(292): CFilterChain->run()
+#6 C:\xampp\yii-bin\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\xampp\yii-bin\framework\web\CWebApplication.php(283): CController->run('view')
+#8 C:\xampp\yii-bin\framework\web\CWebApplication.php(142): CWebApplication->runController('riwayatBerobat/...')
+#9 C:\xampp\yii-bin\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\klinik\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/klinik/riwayatBerobat/1
+HTTP_REFERER=http://localhost/klinik/riwayatBerobat/admin
+---
+2013/12/25 01:45:50 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in C:\xampp\yii-bin\framework\web\auth\CAccessControlFilter.php:170
+Stack trace:
+#0 C:\xampp\yii-bin\framework\web\auth\CAccessControlFilter.php(133): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 C:\xampp\yii-bin\framework\web\filters\CFilter.php(39): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\xampp\yii-bin\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#3 C:\xampp\yii-bin\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\xampp\yii-bin\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\xampp\yii-bin\framework\web\CController.php(292): CFilterChain->run()
+#6 C:\xampp\yii-bin\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\xampp\yii-bin\framework\web\CWebApplication.php(283): CController->run('')
+#8 C:\xampp\yii-bin\framework\web\CWebApplication.php(142): CWebApplication->runController('dokter')
+#9 C:\xampp\yii-bin\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\klinik\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/klinik/dokter
+---
+2013/12/25 01:46:45 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in C:\xampp\yii-bin\framework\web\auth\CAccessControlFilter.php:170
+Stack trace:
+#0 C:\xampp\yii-bin\framework\web\auth\CAccessControlFilter.php(133): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 C:\xampp\yii-bin\framework\web\filters\CFilter.php(39): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\xampp\yii-bin\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#3 C:\xampp\yii-bin\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\xampp\yii-bin\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\xampp\yii-bin\framework\web\CController.php(292): CFilterChain->run()
+#6 C:\xampp\yii-bin\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\xampp\yii-bin\framework\web\CWebApplication.php(283): CController->run('')
+#8 C:\xampp\yii-bin\framework\web\CWebApplication.php(142): CWebApplication->runController('dokter')
+#9 C:\xampp\yii-bin\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\klinik\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/klinik/dokter
+---
+2013/12/25 01:46:53 [error] [exception.CException] exception 'CException' with message 'Property "CWebUser.idTypeUser" is not defined.' in C:\xampp\yii-bin\framework\base\CComponent.php:131
+Stack trace:
+#0 C:\xampp\yii-bin\framework\web\auth\CWebUser.php(141): CComponent->__get('idTypeUser')
+#1 C:\xampp\htdocs\klinik\protected\controllers\ObatController.php(31): CWebUser->__get('idTypeUser')
+#2 C:\xampp\yii-bin\framework\web\CController.php(1145): ObatController->accessRules()
+#3 C:\xampp\yii-bin\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\xampp\yii-bin\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\xampp\yii-bin\framework\web\CController.php(292): CFilterChain->run()
+#6 C:\xampp\yii-bin\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\xampp\yii-bin\framework\web\CWebApplication.php(283): CController->run('admin')
+#8 C:\xampp\yii-bin\framework\web\CWebApplication.php(142): CWebApplication->runController('obat/admin')
+#9 C:\xampp\yii-bin\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\klinik\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/klinik/obat/admin
+HTTP_REFERER=http://localhost/klinik/
+---
+2013/12/25 01:47:02 [error] [exception.CException] exception 'CException' with message 'Property "CWebUser.idTypeUser" is not defined.' in C:\xampp\yii-bin\framework\base\CComponent.php:131
+Stack trace:
+#0 C:\xampp\yii-bin\framework\web\auth\CWebUser.php(141): CComponent->__get('idTypeUser')
+#1 C:\xampp\htdocs\klinik\protected\controllers\ObatController.php(31): CWebUser->__get('idTypeUser')
+#2 C:\xampp\yii-bin\framework\web\CController.php(1145): ObatController->accessRules()
+#3 C:\xampp\yii-bin\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\xampp\yii-bin\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\xampp\yii-bin\framework\web\CController.php(292): CFilterChain->run()
+#6 C:\xampp\yii-bin\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\xampp\yii-bin\framework\web\CWebApplication.php(283): CController->run('admin')
+#8 C:\xampp\yii-bin\framework\web\CWebApplication.php(142): CWebApplication->runController('obat/admin')
+#9 C:\xampp\yii-bin\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\klinik\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/klinik/obat/admin
+HTTP_REFERER=http://localhost/klinik/
+---
+2013/12/25 01:48:12 [error] [exception.CException] exception 'CException' with message 'Property "CWebUser.idTypeUser" is not defined.' in C:\xampp\yii-bin\framework\base\CComponent.php:131
+Stack trace:
+#0 C:\xampp\yii-bin\framework\web\auth\CWebUser.php(141): CComponent->__get('idTypeUser')
+#1 C:\xampp\htdocs\klinik\protected\controllers\ObatController.php(31): CWebUser->__get('idTypeUser')
+#2 C:\xampp\yii-bin\framework\web\CController.php(1145): ObatController->accessRules()
+#3 C:\xampp\yii-bin\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\xampp\yii-bin\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\xampp\yii-bin\framework\web\CController.php(292): CFilterChain->run()
+#6 C:\xampp\yii-bin\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\xampp\yii-bin\framework\web\CWebApplication.php(283): CController->run('admin')
+#8 C:\xampp\yii-bin\framework\web\CWebApplication.php(142): CWebApplication->runController('obat/admin')
+#9 C:\xampp\yii-bin\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\klinik\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/klinik/obat/admin
+HTTP_REFERER=http://localhost/klinik/
+---
+2013/12/25 01:48:17 [error] [exception.CException] exception 'CException' with message 'Property "CWebUser.idTypeUser" is not defined.' in C:\xampp\yii-bin\framework\base\CComponent.php:131
+Stack trace:
+#0 C:\xampp\yii-bin\framework\web\auth\CWebUser.php(141): CComponent->__get('idTypeUser')
+#1 C:\xampp\htdocs\klinik\protected\controllers\ObatController.php(31): CWebUser->__get('idTypeUser')
+#2 C:\xampp\yii-bin\framework\web\CController.php(1145): ObatController->accessRules()
+#3 C:\xampp\yii-bin\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\xampp\yii-bin\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\xampp\yii-bin\framework\web\CController.php(292): CFilterChain->run()
+#6 C:\xampp\yii-bin\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\xampp\yii-bin\framework\web\CWebApplication.php(283): CController->run('admin')
+#8 C:\xampp\yii-bin\framework\web\CWebApplication.php(142): CWebApplication->runController('obat/admin')
+#9 C:\xampp\yii-bin\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\klinik\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/klinik/obat/admin
+HTTP_REFERER=http://localhost/klinik/
+---
